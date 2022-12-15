@@ -69,6 +69,20 @@ export class ReservacionService {
     );
   }
 
+  public getReservacion2(): Observable<Reservacion[]> {
+    return this.firestore.collection('Reservacion').snapshotChanges().pipe(
+      map(actions => {
+        return actions.map(a => {
+          console.log(a);
+          const data = a.payload.doc.data() as Reservacion;
+          console.log(data);
+          const id = a.payload.doc.id;
+          return { id, ...data }
+        });
+      })
+    );
+  }
+
   public getReservacionLeon(): Observable<Reservacion[]> {
     return this.firestore.collection('ReservacionLeon').snapshotChanges().pipe(
       map(actions => {

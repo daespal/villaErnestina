@@ -143,6 +143,7 @@ export class AdminPage implements OnInit {
   public ordenar(){
     this.huespService.getReservacion().subscribe(resp=>{
       this.huesped = resp;
+
      this.huesped.forEach(a => {
       this.fecha = new Date(a.fechaIni)
       this.huesped.sort((a,b)=> new Date(a.fechaIni).getTime() - new Date(b.fechaIni).getTime());
