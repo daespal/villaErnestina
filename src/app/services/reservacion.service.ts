@@ -25,14 +25,14 @@ export class ReservacionService {
 
   validarToken(token: string){
     if (token === this.codigoAdm[0]){
-      this.router.navigate(['/list-host']);
+      this.router.navigate(['/admin']);
     }else if(this.codigoAdm.includes(token)){
       let navigation: NavigationExtras = {
         state:{
           codigoAdm: token
         }
       }
-      this.router.navigate(['/tap-huesped/view-huesp'], navigation)
+      this.router.navigate(['/tabs/tab1'], navigation)
     }
 
   }

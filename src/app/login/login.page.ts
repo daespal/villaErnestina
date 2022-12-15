@@ -20,6 +20,10 @@ export class LoginPage implements OnInit {
   public myForm: FormGroup;
   public codigo:string="";
 
+  credenciales  = {
+    ingreso: null
+  }
+
 
   constructor(private router: Router,private alertController: AlertController, 
     private service:ReservacionService, private fb: FormBuilder, private navCtrl: NavController) {
@@ -30,6 +34,9 @@ export class LoginPage implements OnInit {
   }
 
   ngOnInit() {
+    this.myForm = this.fb.group({
+      codigo: ["",Validators.required]
+    })
   }
   async loginPrueba (){
     this.service.huespedes = this.huesped;
@@ -87,17 +94,17 @@ export class LoginPage implements OnInit {
   }
 
   public ingresarAdmi(){
-    this.router.navigate(['list-host'])
+    this.router.navigate(['admin'])
   }
 
   public ingresarHost(){
-    this.router.navigate(['view-huesped'])
+    this.router.navigate(['tabs/tab1'])
   }
 
  
 
   public getUsuarioByCodigo(codigo:string){
-    this.router.navigate(['tap-huesped'],{
+    this.router.navigate(['tabs/tab1'],{
       queryParams: {codigo:codigo}
      
     });
