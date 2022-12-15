@@ -1,6 +1,6 @@
-
-import { Injectable } from '@angular/core';
 import { Administrador } from './../models/administrador';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { Injectable } from '@angular/core';
 import { Reservacion } from '../models/reservacion';
 import { NavigationExtras, Router } from '@angular/router';
 import { Observable } from 'rxjs';
@@ -15,7 +15,7 @@ import { AngularFireAuth } from '@angular/fire/compat/auth';
 })
 export class ReservacionService {
   public huespedes: Reservacion[];
-
+  public huesped: Reservacion;
   public codigoAdm = ['admin'];
   public codigo = '';
   constructor(private firestore: AngularFirestore, private authFirebase: AngularFireAuth, private router:Router) { }
@@ -66,5 +66,12 @@ export class ReservacionService {
         });
       })
     );
+  }
+
+  public whatsapp(whatsappnumber: string, codigo: string): string {
+    let countrycode: string = "52";
+    let url: string = "https://wa.me/" + countrycode + whatsappnumber + "?text=Hola%20gracias%20por%20reservar%20con%20nosotros,%20su%20codigo%20de%20acceso%20es:" + codigo;
+    console.log(url);
+    return url
   }
 }
