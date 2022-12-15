@@ -1,0 +1,7 @@
+{
+  "name": "villaErnestina",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
