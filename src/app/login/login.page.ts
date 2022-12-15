@@ -1,3 +1,4 @@
+import { Administrador } from './../models/administrador';
 import { Reservacion } from './../models/reservacion';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';

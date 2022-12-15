@@ -1,3 +1,8 @@
+import { Reservacion } from './../models/reservacion';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { AlertController } from '@ionic/angular';
+import { Router } from '@angular/router';
+import { ReservacionService } from './../services/reservacion.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,14 +12,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminPage implements OnInit {
 
-  public huesped!: Reservacion[];
-  public huespe!: Reservacion;
+  public huesped: Reservacion[];
+  public huesped2: Reservacion[];
+  public huespe: Reservacion;
   public ind: number = 0;
   public codigo: number = Math.random();
   public fecha = new Date();
 
   url: string = "";
-  constructor(private huespService: ReservationService, private router: Router, private alertController: AlertController,
+  constructor(private huespService: ReservacionService, private router: Router, private alertController: AlertController,
     private auth: AngularFireAuth) {
     this.huespService.getReservacion().subscribe(res => {
       this.huesped = res;
@@ -134,4 +140,14 @@ export class AdminPage implements OnInit {
     await alert.present();
   }
 
+  public ordenar(){
+    this.huespService.getReservacion().subscribe(resp=>{
+      this.huesped2 = resp;
+     this.huesped2.forEach(a => {
+      this.fecha = new Date(a.fechaIni)
+      this.huesped2.sort((a,b)=> new Date(a.fechaIni).getTime() - new Date(b.fechaIni).getTime());
+      
+     });
+    });
+  }
 }

@@ -18,6 +18,9 @@ export class ReservacionService {
   public huesped: Reservacion;
   public codigoAdm = ['admin'];
   public codigo = '';
+
+  public url: string = "";
+
   constructor(private firestore: AngularFirestore, private authFirebase: AngularFireAuth, private router:Router) { }
 
   validarToken(token: string){
@@ -74,4 +77,17 @@ export class ReservacionService {
     console.log(url);
     return url
   }
+
+  public setWats() {
+    return this.url
+  }
+
+  stateUser(){
+    return this.authFirebase.authState
+  }
+
+  public removeReservation(id: string) {
+    this.firestore.collection('Reservacion').doc(id).delete();
+  }
+
 }
