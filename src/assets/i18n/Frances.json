@@ -3,7 +3,7 @@
     "Idioma": "langage",
     "Gracias": "merci d'avoir réservé en",
     "Actividades": "Vous pouvez faire les activités suivantes",
-    "Lancha": "Paseo en lancha",
+    "Lancha": "Promenade en bateau",
     "Kayak":"Kayak",
     "Caminata":"Une randonnée",
     "Reglamento":"Règles de procédure",
@@ -22,5 +22,26 @@
     "SiTu":"Si votre animal défèque de l'urine, il est de votre responsabilité de nettoyer la zone",
 
     "Interes": "Intérêt",
-    "Llegar": "Comment arriver?"
+    "Llegar": "Comment arriver?",
+
+    "Llegada": "Votre jour d'arrivée est:",
+    "Salida": "Votre date de départ est: ",
+    "LlegadaTexto": "Nous sommes flexibles avec votre arrivée : L'heure officielle pour entrer dans le Bungalow est 15h00. S'il y a peu de demande et qu'il n'y a pas de réservation la veille, cela pourrait être plus tôt, veuillez demander des informations à ce sujet.",
+    "SalidaTexto": "Nous sommes flexibles avec votre départ : L'heure de départ officielle vers le Bungalow est 12h00. S'il y a peu de demande et qu'il n'y a pas de réservations, le lendemain pourrait être plus tard, veuillez demander des informations à ce sujet.",
+    "RentaLanchas": "1. Location de pédalos : 200,00 $ 1 heure pour 2 adultes et un enfant. Plus de rapports 3112661762 (il s'agit d'un lien vers l'application téléphonique).",
+    "PaseoLanchas":"Promenade en bateau : 1 à 4 personnes 350,00 $, de 5 à 10 personnes 70,00 $ par personne pour la visite. Plus de rapports 3112661762 (il s'agit d'un lien vers l'application téléphonique).",
+    "PrecioLanchas": "*Ces prix ne sont pas contrôlés par les administrateurs de la Villa Ernestina et peuvent changer à tout moment",
+    "Masages": "Massages et Temazcal",
+    "Masaje1": "1. Massages : $500 1 heure, réservation requise. Plus de rapports 3111232609 (il s'agit d'un lien vers l'application téléphonique).",
+    "Masaje2": "2. Temazcal: $200 1 heure, uniquement le samedi à 16 h. Plus de rapports 3111232609 (il s'agit d'un lien vers l'application téléphonique).",
+    "Mensaje3": "*Ces prix ne sont pas contrôlés par les administrateurs de la Villa Ernestina et peuvent changer à tout moment",
+    "Ciclismo": "Vélo et randonnée",
+    "Ciclismo1": "Profitez des paysages incroyables en marchant ou en roulant autour de La Laguna avec une longueur d'environ 8 kilomètres",
+    "KayakTexto": "Dans le cadre du service Villa Ernestina, nous vous offrons gratuitement un kayak double et des gilets de sauvetage. Vous pouvez entrer dans La Laguna par n'importe quel restaurant, tout le monde vous donnera la permission. Il vous suffit de prendre en compte les éléments suivants:",
+    "KayakTexto1":"1. C'est un Kayak qui est partagé entre les invités.",
+    "KayakTexto2": "2. Vous pouvez le prendre quand vous en avez besoin.",
+    "KayakTexto3": "3. Comme il est gonflable, évitez de le traîner pour le déplacer et ne l'exposez pas à des objets tranchants ou à des zones où il y a beaucoup de pierres.",
+    "KayakTexto4": "4. Lorsque vous avez fini de l'utiliser, veuillez le mettre au même endroit.",
+    "Natacion": "Natation",
+    "NatacionTexto":"Dans le cadre du service, nous vous prêtons des gilets de sauvetage entièrement gratuitement."
 }

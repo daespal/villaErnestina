@@ -7,45 +7,22 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-label>{{"Reglas" | translate}}</ion-label>
   <ion-card>
     <ion-card-header>
-      <ion-card-title>
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>{{"Lugar" | translate}}</ion-card-title>
-          </ion-card-header>
-
-          <ion-card-content>
-            <ion-icon name="rose-outline"></ion-icon> {{"Respetar" | translate}}
-          </ion-card-content>
-          <ion-card-content>
-            <ion-icon name="home-outline"></ion-icon> {{"Cuidar" | translate}}
-          </ion-card-content>
-          <ion-card-content>
-            <ion-icon name="water-outline"></ion-icon> {{"Eficientar" | translate}}
-          </ion-card-content>
-          <ion-card-content>
-            <ion-icon name="people-outline"></ion-icon> {{"Huespedes" | translate}}
-          </ion-card-content>
-          <ion-card-content>
-            <ion-icon name="people-outline"></ion-icon> {{"Evitar" | translate}}
-          </ion-card-content>
-        </ion-card>
-      </ion-card-title>
-      <ion-card-subtitle>Bungalow León y Elefante</ion-card-subtitle>
+      <ion-card-title>{{"Comidas" | translate}}</ion-card-title>
+      <ion-accordion-group expand="inset">
+        <ion-accordion value="first">
+          <ion-item slot="header" color="light">
+            <ion-label>{{"Recomendaciones"| translate }}</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            {{"Resta1"| translate }} <br/>
+            {{"Resta2"| translate }} <br/>
+            {{"Resta3"| translate }} <br/>
+            {{"Resta4"| translate }}
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
     </ion-card-header>
-  </ion-card> <br>
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>{{"ReglamentoMas" | translate}}</ion-card-title>
-    </ion-card-header>
-
-    <ion-card-content>{{"Todas" | translate}}</ion-card-content>
-    <ion-card-content> {{"Si" | translate}}</ion-card-content>
-    <ion-card-content> {{"No" | translate}}</ion-card-content>
-    <ion-card-content> {{"En" | translate}}</ion-card-content>
-    <ion-card-content> {{"SiTu" | translate}}</ion-card-content>
   </ion-card>
 </ion-content>

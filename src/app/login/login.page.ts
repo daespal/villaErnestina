@@ -96,13 +96,13 @@ export class LoginPage implements OnInit {
   }
 
   public ingresarHost(){
-    this.router.navigate(['tabs/tab2'])
+    this.router.navigate(['tabs/tab1'])
   }
 
  
 
   public getUsuarioByCodigo(codigo:string){
-    this.router.navigate(['tabs/tab2'],{
+    this.router.navigate(['tabs/tab1'],{
       queryParams: {codigo:codigo}
      
     });

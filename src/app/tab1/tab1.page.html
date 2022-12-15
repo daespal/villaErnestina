@@ -1,4 +1,3 @@
-
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title> {{huesped.nombre}} </ion-title>
@@ -6,57 +5,76 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-item class="select">
+    <ion-label> {{"Idioma" | translate}} </ion-label>
+    <ion-select cancelText="Cancel" (ionChange)="changeLang($event)">
+      <ion-select-option *ngFor="let lang of langs">{{lang}}</ion-select-option>
+      <ion-select-option>Ingles</ion-select-option>
+      <ion-select-option>Frances</ion-select-option>
+      <ion-select-option>Español</ion-select-option>
+    </ion-select>
+  </ion-item>
   <ion-card>
     <ion-card-header>
-      <ion-card-title
-        >Bienvenido {{huesped.nombre}} gracias por reservar en
-        {{huesped.habitacion}}</ion-card-title
-      >
-      <ion-card-subtitle
-        >Puede realizar las siguientes actividades</ion-card-subtitle
-      >
-      <ion-accordion-group expand="inset">
-        <ion-accordion value="first">
-          <ion-item slot="header" color="light">
-            <ion-label>Paseos en lancha</ion-label>
-          </ion-item>
-          <div class="ion-padding" slot="content">
-            1. Renta de lancha de pedales: $200.00 1 hora para 2 adultos y un
-            niño. Mayores informes 3112661762 (esto es un enlace hacia la app de
-            teléfono) <br />
-            Paseo en lancha: 1 a 4 personas $350.00, de 5 a 10 personas $70.00
-            por persona el recorrido. Mayores informes 3112661762 (esto es un
-            enlace hacia la app de teléfono)
-            <br />
-            *Éstos precios no son controlados por los administradores de Villa
-            Ernestina y pueden cambiar en cualquier momento
-          </div>
-        </ion-accordion>
-        <ion-accordion value="second">
-          <ion-item slot="header" color="light">
-            <ion-label>Masajes y Temazcal</ion-label>
-          </ion-item>
-          <div class="ion-padding" slot="content">
-            1. Masajes: $500.00 1 hora, se requiere reservar. Mayores informes
-            3111232609 (esto es un enlace hacia la app de teléfono)
-            <br />
-            2. Temazcal: $200.00 1 hora, sólo los sábados a las 16:00. Mayores
-            informes 3111232609 (esto es un enlace hacia la app de teléfono)
-            <br />
-            *Éstos precios no son controlados por los administradores de Villa
-            Ernestina y pueden cambiar en cualquier momento
-          </div>
-        </ion-accordion>
-        <ion-accordion value="third">
-          <ion-item slot="header" color="light">
-            <ion-label>Ciclismo y Senderismo</ion-label>
-          </ion-item>
-          <div class="ion-padding" slot="content">
-            Disfruta de los paisajes increíbles al caminar o rodar alrededor de
-            La Laguna con una longitud de 8 kilómetros aproximadamente
-          </div>
-        </ion-accordion>
-      </ion-accordion-group>
+      <ion-card-title>{{"Bienvenido" | translate}} {{huesped.nombre}} {{"Gracias" | translate}} {{huesped.habitacion}}</ion-card-title>
+      <ion-card-title>{{"Llegada" | translate}} {{huesped.fechaIni}}</ion-card-title>
+      <ion-card-subtitle>{{"LlegadaTexto" | translate}}</ion-card-subtitle>
+      <ion-card-title>{{"Salida" | translate}} {{huesped.fechaEgr}}</ion-card-title>
+      <ion-card-subtitle>{{"SalidaTexto" | translate}}</ion-card-subtitle>
+      <ion-card-title>{{"Actividades" | translate}}</ion-card-title>
+          <ion-accordion-group expand="inset">
+            <ion-accordion value="first">
+              <ion-item slot="header" color="light">
+                <ion-label>{{"Lancha"| translate }}</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                {{"RentaLanchas"| translate }} <br />
+                {{"PaseoLanchas"| translate }}
+                <br />
+                {{"PrecioLanchas"| translate }}
+              </div>
+            </ion-accordion>
+            <ion-accordion value="second">
+              <ion-item slot="header" color="light">
+                <ion-label>{{"Masages"| translate }}</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                {{"Masaje1"| translate }}
+                <br />
+                {{"Mensaje2"| translate }}
+                <br />
+                {{"Mensaje3"| translate }}
+              </div>
+            </ion-accordion>
+            <ion-accordion value="third">
+              <ion-item slot="header" color="light">
+                <ion-label>{{"Ciclismo"| translate }}</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                {{"Ciclismo1"| translate }}
+              </div>
+            </ion-accordion>
+            <ion-accordion value="four">
+              <ion-item slot="header" color="light">
+                <ion-label>{{"Kayak"| translate }}</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                {{"KayakTexto"| translate }} <br>
+                {{"KayakTexto1"| translate }} <br>
+                {{"KayakTexto2"| translate }} <br>
+                {{"KayakTexto3"| translate }} <br>
+                {{"KayakTexto4"| translate }} <br>
+              </div>
+            </ion-accordion>
+            <ion-accordion value="five">
+              <ion-item slot="header" color="light">
+                <ion-label>{{"Natacion"| translate }}</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                {{"NatacionTexto"| translate }}
+              </div>
+            </ion-accordion>
+          </ion-accordion-group>
     </ion-card-header>
   </ion-card>
 </ion-content>

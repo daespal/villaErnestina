@@ -43,7 +43,7 @@ export class ReservacionService {
           codigoAdm: token
         }
       }
-      this.router.navigate(['/tabs/tab2'], navigation)
+      this.router.navigate(['/tabs/tab1'], navigation)
     }
 
   }
