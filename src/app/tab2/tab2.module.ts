@@ -9,6 +9,7 @@ import { SwiperModule } from 'swiper/angular';
 import { TranslateModule } from '@ngx-translate/core';
 import { Tab2PageRoutingModule } from './tab2-routing.module';
 
+
 @NgModule({
   imports: [
     IonicModule,

@@ -7,9 +7,7 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { TranslateModule } from '@ngx-translate/core';
 import { Tab1PageRoutingModule } from './tab1-routing.module';
-
-import { SwiperModule } from 'swiper/angular';
-
+  
 @NgModule({
   imports: [
     IonicModule,
@@ -17,7 +15,7 @@ import { SwiperModule } from 'swiper/angular';
     FormsModule,
     ExploreContainerComponentModule,
     Tab1PageRoutingModule,
-    SwiperModule
+    TranslateModule
   ],
   declarations: [Tab1Page]
 })

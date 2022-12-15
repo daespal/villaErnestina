@@ -8,25 +8,155 @@
 
 
 <ion-content [fullscreen]="true">
-  <ion-item class="select">
-    <ion-label> {{"Idioma" | translate}} </ion-label>
-    <ion-select cancelText="Cancel" (ionChange)="changeLang($event)">
-      <ion-select-option *ngFor="let lang of langs">{{lang}}</ion-select-option>
-      <ion-select-option>Ingles</ion-select-option>
-      <ion-select-option>Frances</ion-select-option>
-      <ion-select-option>Español</ion-select-option>
-    </ion-select>
-  </ion-item>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>{{"Bienvenido" | translate}} {{huesped.nombre}} {{"Gracias" | translate}} {{huesped.habitacion}}
-      </ion-card-title>
-      <ion-card-subtitle>{{"Actividades" | translate}}</ion-card-subtitle>
-      <ion-select interface="popover">
-        <ion-select-option>{{"Paseo en lancha"| translate }}</ion-select-option>
-        <ion-select-option>{{"Kayak"| translate }}</ion-select-option>
-        <ion-select-option>{{"Caminata" | translate}}</ion-select-option>
-      </ion-select>
-    </ion-card-header>
-  </ion-card>
+  <ion-accordion-group expand="inset">
+    <ion-accordion value="first">
+      <ion-item slot="header" color="light">
+        <ion-label>Paseos en lancha</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <swiper [slidesPerView]="1" [loop]="true">
+          <ng-template swiperSlide>
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>{{"Respetar" | translate}}</ion-card-title>
+              </ion-card-header>
+              <ion-img
+                src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/316835824_145088924946566_6080023269696187635_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGAIRCoQjjZr0Rz9eJWf_Q4Qu1J-0aAXxxC7Un7RoBfHGygcNXc9WDr32K0rMDddg0mwLRd0xiMyeGIU1G1WpNj&_nc_ohc=ZPqKGDDJTI4AX_dUkwG&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfDIqUKHXNG8zhj91KFhxX31_pSYKKj5My4KMX-ZzuLdfg&oe=639F7B81"
+                width="150"
+                height="150"
+              ></ion-img>
+            </ion-card>
+          </ng-template>
+          <ng-template swiperSlide
+            ><ion-card>
+              <ion-card-header>
+                <ion-card-title>{{"Cuidar" | translate}}</ion-card-title>
+              </ion-card-header>
+              <ion-img
+                src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/316835824_145088924946566_6080023269696187635_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGAIRCoQjjZr0Rz9eJWf_Q4Qu1J-0aAXxxC7Un7RoBfHGygcNXc9WDr32K0rMDddg0mwLRd0xiMyeGIU1G1WpNj&_nc_ohc=ZPqKGDDJTI4AX_dUkwG&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfDIqUKHXNG8zhj91KFhxX31_pSYKKj5My4KMX-ZzuLdfg&oe=639F7B81"
+                width="150"
+                height="150"
+              ></ion-img> </ion-card
+          ></ng-template>
+          <ng-template swiperSlide
+            ><ion-card>
+              <ion-card-header>
+                <ion-card-title
+                  >{{"Eficientar" | translate}}
+                </ion-card-title>
+              </ion-card-header>
+              <ion-img
+                src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/316835824_145088924946566_6080023269696187635_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGAIRCoQjjZr0Rz9eJWf_Q4Qu1J-0aAXxxC7Un7RoBfHGygcNXc9WDr32K0rMDddg0mwLRd0xiMyeGIU1G1WpNj&_nc_ohc=ZPqKGDDJTI4AX_dUkwG&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfDIqUKHXNG8zhj91KFhxX31_pSYKKj5My4KMX-ZzuLdfg&oe=639F7B81"
+                width="150"
+                height="150"
+              ></ion-img> </ion-card></ng-template
+          ><ng-template swiperSlide
+            ><ion-card>
+              <ion-card-header>
+                <ion-card-title
+                  >{{"Huespedes" | translate}}
+                </ion-card-title>
+              </ion-card-header>
+              <ion-img
+                src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/316835824_145088924946566_6080023269696187635_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGAIRCoQjjZr0Rz9eJWf_Q4Qu1J-0aAXxxC7Un7RoBfHGygcNXc9WDr32K0rMDddg0mwLRd0xiMyeGIU1G1WpNj&_nc_ohc=ZPqKGDDJTI4AX_dUkwG&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfDIqUKHXNG8zhj91KFhxX31_pSYKKj5My4KMX-ZzuLdfg&oe=639F7B81"
+                width="150"
+                height="150"
+              ></ion-img> </ion-card></ng-template
+          ><ng-template swiperSlide
+            ><ion-card>
+              <ion-card-header>
+                <ion-card-title
+                  >{{"Evitar" | translate}}
+                  <a
+                    href="https://dof.gob.mx/nota_detalle.php?codigo=4706988&fecha=22/06/1994#gsc.tab=0"
+                    >NOM-081-ECOL-1994</a
+                  ></ion-card-title
+                >
+              </ion-card-header>
+              <ion-img
+                src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/316835824_145088924946566_6080023269696187635_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGAIRCoQjjZr0Rz9eJWf_Q4Qu1J-0aAXxxC7Un7RoBfHGygcNXc9WDr32K0rMDddg0mwLRd0xiMyeGIU1G1WpNj&_nc_ohc=ZPqKGDDJTI4AX_dUkwG&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfDIqUKHXNG8zhj91KFhxX31_pSYKKj5My4KMX-ZzuLdfg&oe=639F7B81"
+                width="150"
+                height="150"
+              ></ion-img> </ion-card
+          ></ng-template>
+        </swiper>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+
+
+
+
+
+    <ion-accordion-group expand="inset">
+      <ion-accordion value="first">
+        <ion-item slot="header" color="light">
+          <ion-label>{{"ReglamentoMas" | translate}}</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <swiper [slidesPerView]="1" [loop]="true">
+            <ng-template swiperSlide>
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-title>{{"Todas" | translate}}</ion-card-title>
+                </ion-card-header>
+                <ion-img
+                  src="https://curiosfera-animales.com/wp-content/uploads/2016/06/Remedios-caseros-para-quitar-pulgas-en-perros.jpg"
+                  width="150"
+                  height="150"
+                ></ion-img>
+              </ion-card>
+            </ng-template>
+            <ng-template swiperSlide
+              ><ion-card>
+                <ion-card-header>
+                  <ion-card-title>{{"Si" | translate}}</ion-card-title>
+                </ion-card-header>
+                <ion-img
+                  src="https://www.prensalibre.com/wp-content/uploads/2020/06/ACE-mordida-perro.jpg?quality=52"
+                  width="150"
+                  height="150"
+                ></ion-img> </ion-card
+            ></ng-template>
+            <ng-template swiperSlide
+              ><ion-card>
+                <ion-card-header>
+                  <ion-card-title
+                    >{{"No" | translate}}
+                  </ion-card-title>
+                </ion-card-header>
+                <ion-img
+                  src="https://estaticos.muyinteresante.es/uploads/images/article/570b65e55bafe88a438b456a/perro_0.jpg"
+                  width="150"
+                  height="150"
+                ></ion-img> </ion-card></ng-template
+            ><ng-template swiperSlide
+              ><ion-card>
+                <ion-card-header>
+                  <ion-card-title
+                    >{{"En" | translate}}
+                  </ion-card-title>
+                </ion-card-header>
+                <ion-img
+                  src="http://cdn.shopify.com/s/files/1/1574/5941/articles/banar-a-tu-perro.jpg?v=1488999769"
+                  width="150"
+                  height="150"
+                ></ion-img> </ion-card></ng-template
+            ><ng-template swiperSlide
+              ><ion-card>
+                <ion-card-header>
+                  <ion-card-title
+                    >{{"SiTu" | translate}}
+                    </ion-card-title>
+                </ion-card-header>
+                <ion-img
+                  src="http://cdn.shopify.com/s/files/1/1574/5941/articles/banar-a-tu-perro.jpg?v=1488999769"
+                  width="150"
+                  height="150"
+                ></ion-img> </ion-card
+            ></ng-template>
+          </swiper>
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
 </ion-content>

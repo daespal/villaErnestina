@@ -12,6 +12,7 @@ import {AngularFireDatabaseModule} from '@angular/fire/compat/database';
 import { environment } from 'src/environments/environment';
 import {AngularFirestore} from '@angular/fire/compat/firestore';
 
+
 // Traductor
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader, TranslateService } from '@ngx-translate/core';
@@ -22,12 +23,10 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient, "../assets/i18n/", ".json")
 }
 
-import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularFireModule.initializeApp(environment.firebaseConfig), 
-
     AngularFireDatabaseModule,
     HttpClientModule,
     TranslateModule.forRoot({
@@ -36,8 +35,7 @@ import { SwiperModule } from 'swiper/angular';
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    }),
-    SwiperModule],
+    })],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, AngularFirestore],
   bootstrap: [AppComponent],
 })
