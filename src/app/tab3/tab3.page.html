@@ -1,17 +1,28 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      {{"Reglamento" | translate}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{"Comidas" | translate}}</ion-card-title>
+      <ion-accordion-group expand="inset">
+        <ion-accordion value="first">
+          <ion-item slot="header" color="light">
+            <ion-label>{{"Recomendaciones"| translate }}</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            {{"Resta1"| translate }} <br/>
+            {{"Resta2"| translate }} <br/>
+            {{"Resta3"| translate }} <br/>
+            {{"Resta4"| translate }}
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+    </ion-card-header>
+  </ion-card>
 </ion-content>

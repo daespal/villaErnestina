@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Reservacion } from '../models/reservacion';
+import { TranslateService } from '@ngx-translate/core';
+import { ReservacionService } from '../services/reservacion.service';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +9,9 @@ import { Reservacion } from '../models/reservacion';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+
+  langs: string [] = [];
+
 
   public huespedes: Reservacion[] = [];
   public huesped: Reservacion =
@@ -19,6 +24,14 @@ export class Tab1Page {
       habitacion: "1A",
       tokens: "111"
     }
-  constructor() {}
+  constructor(private translateService: TranslateService, private service: ReservacionService) {
+    this.huesped = this.service.huesped;
+
+    console.log('Uesped', this.huesped);
+  }
+  changeLang(event: any){
+    this.translateService.use(event.detail.value);
+    console.log(event.detail.value);
+  }
 
 }
