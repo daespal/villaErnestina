@@ -1,17 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      {{huesped.nombre}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Bienvenido {{huesped.nombre}} gracias por reservar en {{huesped.habitacion}}</ion-card-title>
+      <ion-card-subtitle>Puede realizar las siguientes actividades</ion-card-subtitle>
+      <ion-select interface="popover">
+        <ion-select-option>{{"Paseo en lancha" }}</ion-select-option>
+        <ion-select-option>{{"Kayak" }}</ion-select-option>
+        <ion-select-option>{{"Caminata" }}</ion-select-option>
+      </ion-select>
+    </ion-card-header>
+  </ion-card>
 </ion-content>
