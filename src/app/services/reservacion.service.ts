@@ -23,6 +23,10 @@ export class ReservacionService {
 
   constructor(private firestore: AngularFirestore, private authFirebase: AngularFireAuth, private router:Router) { }
 
+  public addHuesped(huesped: Reservacion) {
+    this.firestore.collection('Reservacion').add(huesped);
+  }
+
   validarToken(token: string){
     if (token === this.codigoAdm[0]){
       this.router.navigate(['/list-host']);

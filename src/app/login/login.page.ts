@@ -20,7 +20,9 @@ export class LoginPage implements OnInit {
   public myForm: FormGroup;
   public codigo:string="";
 
-
+  credenciales  = {
+    ingreso: null
+  }
   constructor(private router: Router,private alertController: AlertController, 
     private service:ReservacionService, private fb: FormBuilder, private navCtrl: NavController) {
       this.service.getReservacion().subscribe(res => {

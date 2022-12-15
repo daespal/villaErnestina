@@ -10,8 +10,14 @@
   </div>
   <div class="login">
     <form [formGroup]="myForm">
-      <input formControlName="codigo" type="password" placeholder="Codigo" (keyup.enter)="loginPrueba()" id="password"
-        [(ngModel)]="credenciales.ingreso" /><br />
+      <input
+        formControlName="codigo"
+        type="password"
+        placeholder="Codigo"
+        (keyup.enter)="loginPrueba()"
+        id="password"
+        [(ngModel)]="credenciales.ingreso"
+      /><br />
       <input type="button" value="Ingresar" (click)="loginPrueba()" />
     </form>
   </div>
