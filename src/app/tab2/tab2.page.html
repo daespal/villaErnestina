@@ -5,65 +5,174 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-label>Reglas de Villa Ernestina</ion-label>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>Bungalow León y Elefante</ion-card-title>
-          </ion-card-header>
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title> Reglamento General Villa Ernestina</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-          <ion-card-content>
-            <ion-icon name="rose-outline"></ion-icon> Respetar la naturaleza
-          </ion-card-content>
-          <ion-card-content>
-            <ion-icon name="home-outline"></ion-icon> Cuidar las instalaciones
-          </ion-card-content>
-          <ion-card-content>
-            <ion-icon name="water-outline"></ion-icon> Eficientar el uso de los
-            recursos
-          </ion-card-content>
-          <ion-card-content>
-            <ion-icon name="people-outline"></ion-icon> Respetar a los demas
-            húespedes
-          </ion-card-content>
-          <ion-card-content>
-            <ion-icon name="people-outline"></ion-icon> Evitar el ruido excesivo
-          </ion-card-content>
-        </ion-card>
-      </ion-card-title>
-      <ion-card-subtitle>Bungalow León y Elefante</ion-card-subtitle>
-    </ion-card-header>
-  </ion-card>
-  <br />
+  <ion-content [fullscreen]="true">
+    <ion-accordion-group expand="inset">
+      <ion-accordion value="first">
+        <ion-item slot="header" color="light">
+          <ion-label>Paseos en lancha</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <swiper [slidesPerView]="1" [loop]="true">
+            <ng-template swiperSlide>
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-title>1.Respetar la Naturaleza</ion-card-title>
+                </ion-card-header>
+                <ion-img
+                  src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/316835824_145088924946566_6080023269696187635_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGAIRCoQjjZr0Rz9eJWf_Q4Qu1J-0aAXxxC7Un7RoBfHGygcNXc9WDr32K0rMDddg0mwLRd0xiMyeGIU1G1WpNj&_nc_ohc=ZPqKGDDJTI4AX_dUkwG&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfDIqUKHXNG8zhj91KFhxX31_pSYKKj5My4KMX-ZzuLdfg&oe=639F7B81"
+                  width="150"
+                  height="150"
+                ></ion-img>
+              </ion-card>
+            </ng-template>
+            <ng-template swiperSlide
+              ><ion-card>
+                <ion-card-header>
+                  <ion-card-title>2.Cuidar las instalaciones</ion-card-title>
+                </ion-card-header>
+                <ion-img
+                  src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/316835824_145088924946566_6080023269696187635_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGAIRCoQjjZr0Rz9eJWf_Q4Qu1J-0aAXxxC7Un7RoBfHGygcNXc9WDr32K0rMDddg0mwLRd0xiMyeGIU1G1WpNj&_nc_ohc=ZPqKGDDJTI4AX_dUkwG&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfDIqUKHXNG8zhj91KFhxX31_pSYKKj5My4KMX-ZzuLdfg&oe=639F7B81"
+                  width="150"
+                  height="150"
+                ></ion-img> </ion-card
+            ></ng-template>
+            <ng-template swiperSlide
+              ><ion-card>
+                <ion-card-header>
+                  <ion-card-title
+                    >3.Eficientar el uso de los recursos
+                  </ion-card-title>
+                </ion-card-header>
+                <ion-img
+                  src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/316835824_145088924946566_6080023269696187635_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGAIRCoQjjZr0Rz9eJWf_Q4Qu1J-0aAXxxC7Un7RoBfHGygcNXc9WDr32K0rMDddg0mwLRd0xiMyeGIU1G1WpNj&_nc_ohc=ZPqKGDDJTI4AX_dUkwG&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfDIqUKHXNG8zhj91KFhxX31_pSYKKj5My4KMX-ZzuLdfg&oe=639F7B81"
+                  width="150"
+                  height="150"
+                ></ion-img> </ion-card></ng-template
+            ><ng-template swiperSlide
+              ><ion-card>
+                <ion-card-header>
+                  <ion-card-title
+                    >4.Respetar a los demás huéspedes
+                  </ion-card-title>
+                </ion-card-header>
+                <ion-img
+                  src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/316835824_145088924946566_6080023269696187635_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGAIRCoQjjZr0Rz9eJWf_Q4Qu1J-0aAXxxC7Un7RoBfHGygcNXc9WDr32K0rMDddg0mwLRd0xiMyeGIU1G1WpNj&_nc_ohc=ZPqKGDDJTI4AX_dUkwG&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfDIqUKHXNG8zhj91KFhxX31_pSYKKj5My4KMX-ZzuLdfg&oe=639F7B81"
+                  width="150"
+                  height="150"
+                ></ion-img> </ion-card></ng-template
+            ><ng-template swiperSlide
+              ><ion-card>
+                <ion-card-header>
+                  <ion-card-title
+                    >{{"Respetar || translate"}}
+                    <a
+                      href="https://dof.gob.mx/nota_detalle.php?codigo=4706988&fecha=22/06/1994#gsc.tab=0"
+                      >NOM-081-ECOL-1994</a
+                    ></ion-card-title
+                  >
+                </ion-card-header>
+                <ion-img
+                  src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/316835824_145088924946566_6080023269696187635_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGAIRCoQjjZr0Rz9eJWf_Q4Qu1J-0aAXxxC7Un7RoBfHGygcNXc9WDr32K0rMDddg0mwLRd0xiMyeGIU1G1WpNj&_nc_ohc=ZPqKGDDJTI4AX_dUkwG&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfDIqUKHXNG8zhj91KFhxX31_pSYKKj5My4KMX-ZzuLdfg&oe=639F7B81"
+                  width="150"
+                  height="150"
+                ></ion-img> </ion-card
+            ></ng-template>
+          </swiper>
+        </div>
+      </ion-accordion>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Reglamento PET FRIENDLY</ion-card-title>
-    </ion-card-header>
+      <!--Aqui inicia el nuevo slide-->
+      <ion-accordion value="second">
+        <ion-item slot="header" color="light">
+          <ion-label>Masajes y Temazcal</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          1. Masajes: $500.00 1 hora, se requiere reservar. Mayores informes
+          3111232609 (esto es un enlace hacia la app de teléfono)
+          <br />
+          2. Temazcal: $200.00 1 hora, sólo los sábados a las 16:00. Mayores
+          informes 3111232609 (esto es un enlace hacia la app de teléfono)
+          <br />
+          *Éstos precios no son controlados por los administradores de Villa
+          Ernestina y pueden cambiar en cualquier momento
+        </div>
+      </ion-accordion>
+      <ion-accordion value="third">
+        <ion-item slot="header" color="light">
+          <ion-label>Ciclismo y Senderismo</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          Disfruta de los paisajes increíbles al caminar o rodar alrededor de La
+          Laguna con una longitud de 8 kilómetros aproximadamente
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Bungalow León y Elefante</ion-card-title>
+            </ion-card-header>
 
-    <ion-card-content
-      >Todas las mascotas deben estar completamente libre de pulgas y garraatas,
-      limpios, bien arreglados, al dia con sus vacunas y la
-      desparasitación</ion-card-content
-    >
-    <ion-card-content>
-      Si por alguna razón tu mascota agrede físicamente a algún inquilino es tu
-      responsabilidad los posibles gastos o destrozos que tu mascota haga en el
-      lugar.</ion-card-content
-    >
-    <ion-card-content>
-      No permitir que las mascotas se suban a camas, sillas o
-      mesas.</ion-card-content
-    >
-    <ion-card-content>
-      En ningún caso un anumal doméstico se podrá bañar en el cuarto de baño de
-      húespedes.
-    </ion-card-content>
-    <ion-card-content>
-      Si tu mascota defeca u rina es tu responsabilidad asear la
-      zona.</ion-card-content
-    >
-  </ion-card>
+            <ion-card-content>
+              <ion-icon name="rose-outline"></ion-icon> Respetar la naturaleza
+            </ion-card-content>
+            <ion-card-content>
+              <ion-icon name="home-outline"></ion-icon> Cuidar las instalaciones
+            </ion-card-content>
+            <ion-card-content>
+              <ion-icon name="water-outline"></ion-icon> Eficientar el uso de
+              los recursos
+            </ion-card-content>
+            <ion-card-content>
+              <ion-icon name="people-outline"></ion-icon> Respetar a los demas
+              húespedes
+            </ion-card-content>
+            <ion-card-content>
+              <ion-icon name="people-outline"></ion-icon> Evitar el ruido
+              excesivo
+            </ion-card-content>
+          </ion-card>
+        </ion-card-title>
+        <ion-card-subtitle>Bungalow León y Elefante</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+    <br />
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Reglamento PET FRIENDLY</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content
+        >Todas las mascotas deben estar completamente libre de pulgas y
+        garraatas, limpios, bien arreglados, al dia con sus vacunas y la
+        desparasitación</ion-card-content
+      >
+      <ion-card-content>
+        Si por alguna razón tu mascota agrede físicamente a algún inquilino es
+        tu responsabilidad los posibles gastos o destrozos que tu mascota haga
+        en el lugar.</ion-card-content
+      >
+      <ion-card-content>
+        No permitir que las mascotas se suban a camas, sillas o
+        mesas.</ion-card-content
+      >
+      <ion-card-content>
+        En ningún caso un anumal doméstico se podrá bañar en el cuarto de baño
+        de húespedes.
+      </ion-card-content>
+      <ion-card-content>
+        Si tu mascota defeca u rina es tu responsabilidad asear la
+        zona.</ion-card-content
+      >
+    </ion-card>
+  </ion-content>
 </ion-content>
