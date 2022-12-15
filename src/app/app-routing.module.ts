@@ -29,6 +29,7 @@ const routes: Routes = [
     loadChildren: () => import('./admin/admin.module').then( m => m.AdminPageModule)
   }
 
+
 ];
 @NgModule({
   imports: [

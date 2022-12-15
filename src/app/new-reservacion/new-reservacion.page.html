@@ -33,7 +33,7 @@
       <ion-row>
         <ion-col>
           <ion-item>
-            <ion-label position="floating">Nombre</ion-label>
+            <ion-label position="floating">Nombre Cliente</ion-label>
             <ion-input formControlName="nombre"></ion-input>
           </ion-item>
           <div>
@@ -127,15 +127,8 @@
           <ion-item>
             <ion-label position="floating">Habitacion</ion-label>
             <ion-select interface="popover" formControlName="habitacion">
-              <ion-select-option value="A1">A1</ion-select-option>
-              <ion-select-option value="A2">A2</ion-select-option>
-              <ion-select-option value="A3">A3</ion-select-option>
-              <ion-select-option value="A4">A4</ion-select-option>
-              <ion-select-option value="B1">B1</ion-select-option>
-              <ion-select-option value="B2">B2</ion-select-option>
-              <ion-select-option value="B3">B3</ion-select-option>
-              <ion-select-option value="B4">B4</ion-select-option>
-              <ion-select-option value="C1">C1</ion-select-option>
+              <ion-select-option value="Leon">Leon</ion-select-option>
+              <ion-select-option value="Elefante">Elefante</ion-select-option>
             </ion-select>
           </ion-item>
           <div>
@@ -155,56 +148,16 @@
       <ion-row>
         <ion-col>
           <ion-item>
-            <ion-label position="floating">Anticipo</ion-label>
-            <ion-input formControlName="anticipo" type="number"></ion-input>
-          </ion-item>
-          <div>
-            <ng-container
-              *ngFor="let validation of validationMessages['anticipo']"
-            >
-              <div
-                class="errormessage"
-                *ngIf="myForm.get('anticipo').hasError(validation.type) && (myForm.get('anticipo').dirty || myForm.get('anticipo').touched)"
-              >
-                {{ validation.message }}
-              </div>
-            </ng-container>
-          </div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          <ion-item>
-            <ion-label position="floating">Total</ion-label>
-            <ion-input formControlName="total" type="number"></ion-input>
-          </ion-item>
-          <div>
-            <ng-container
-              *ngFor="let validation of validationMessages['total']"
-            >
-              <div
-                class="errormessage"
-                *ngIf="myForm.get('total').hasError(validation.type) && (myForm.get('total').dirty || myForm.get('total').touched)"
-              >
-                {{ validation.message }}
-              </div>
-            </ng-container>
-          </div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          <ion-item>
             <ion-label position="floating">Token</ion-label>
-            <ion-input formControlName="token"></ion-input>
+            <ion-input formControlName="tokens"></ion-input>
           </ion-item>
           <div>
             <ng-container
-              *ngFor="let validation of validationMessages['token']"
+              *ngFor="let validation of validationMessages['tokens']"
             >
               <div
                 class="errormessage"
-                *ngIf="myForm.get('token').hasError(validation.type) && (myForm.get('token').dirty || myForm.get('token').touched)"
+                *ngIf="myForm.get('tokens').hasError(validation.type) && (myForm.get('tokens').dirty || myForm.get('tokens').touched)"
               >
                 {{ validation.message }}
               </div>

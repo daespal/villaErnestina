@@ -184,4 +184,14 @@ export class AdminPage implements OnInit {
      });
     });
   }
+
+  public color(col:string){
+    let color="";
+    if (col === "Elefante") {
+      color = "warning";
+    } else {
+      color = "secondary";
+    }
+    return color;
+  }
 }

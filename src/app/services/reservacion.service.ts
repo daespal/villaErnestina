@@ -27,6 +27,13 @@ export class ReservacionService {
     this.firestore.collection('Reservacion').add(huesped);
   }
 
+  public addLeon(huesped: Reservacion) {
+    this.firestore.collection('ReservacionLeon').add(huesped);
+  }
+
+  public addElefante(huesped: Reservacion) {
+    this.firestore.collection('ReservacionElefante').add(huesped);
+  }
   validarToken(token: string){
     if (token === this.codigoAdm[0]){
       this.router.navigate(['/admin']);

@@ -34,9 +34,7 @@ export class NewReservacionPage implements OnInit {
       fechaIni:["", Validators.required],
       fechaEgr:["", Validators.required],
       habitacion:["", Validators.required],
-      anticipo:[0, Validators.required],
-      total:[0, Validators.compose([Validators.required])],
-      token:["", Validators.compose([Validators.required])]
+      tokens:["", Validators.compose([Validators.required])]
     });
 
     this.validationMessages = {
@@ -62,13 +60,7 @@ export class NewReservacionPage implements OnInit {
         { type: 'required', message: "Debe capturar la habitacion"},
         
       ],
-      'anticipo': [
-        { type: 'required', message: "Debe capturar el anticipo"}
-      ],
-      'total': [
-        { type: 'required', message: "Debe capturar el total"}
-      ],
-      'token': [
+      'tokens': [
         { type: 'required', message: "Debe capturar el token"}
       ],
     }
@@ -88,13 +80,17 @@ export class NewReservacionPage implements OnInit {
       fechaIni:this.myForm.controls.fechaIni.value,
       fechaEgr:this.myForm.controls.fechaEgr.value,
       habitacion:this.myForm.controls.habitacion.value,
-      tokens:this.myForm.controls.token.value,
+      tokens:this.myForm.controls.tokens.value,
     }
     this.reservaservices.addHuesped(this.reservacion); 
 
+    if(this.myForm.controls.habitacion.value=="Leon"){
+      this.reservaservices.addLeon(this.reservacion); 
+    }else{
+      this.reservaservices.addElefante(this.reservacion); 
+    }
     
-    
-    //this.navCtrl.pop();
+   
   }
 
   public async saveReservacion() {
