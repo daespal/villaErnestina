@@ -13,11 +13,11 @@ import { Component, OnInit } from '@angular/core';
 export class AdminPage implements OnInit {
 
   public huesped: Reservacion[];
-  public huesped2: Reservacion[];
+  
   public huespe: Reservacion;
   public ind: number = 0;
   public codigo: number = Math.random();
-  public fecha = new Date();
+  public fecha:Date;
 
   url: string = "";
   constructor(private huespService: ReservacionService, private router: Router, private alertController: AlertController,
@@ -142,10 +142,44 @@ export class AdminPage implements OnInit {
 
   public ordenar(){
     this.huespService.getReservacion().subscribe(resp=>{
-      this.huesped2 = resp;
-     this.huesped2.forEach(a => {
+      this.huesped = resp;
+     this.huesped.forEach(a => {
       this.fecha = new Date(a.fechaIni)
-      this.huesped2.sort((a,b)=> new Date(a.fechaIni).getTime() - new Date(b.fechaIni).getTime());
+      this.huesped.sort((a,b)=> new Date(a.fechaIni).getTime() - new Date(b.fechaIni).getTime());
+      
+     });
+    });
+  }
+
+  
+  public normal(){
+    this.huespService.getReservacion().subscribe(resp=>{
+      this.huesped = resp;
+     this.huesped.forEach(a => {
+      this.fecha = new Date(a.fechaIni)
+      this.huesped.sort((a,b)=> new Date(b.fechaIni).getTime() - new Date(a.fechaIni).getTime());
+      
+     });
+    });
+  }
+
+  public leon(){
+    this.huespService.getReservacionLeon().subscribe(resp=>{
+      this.huesped = resp;
+     this.huesped.forEach(a => {
+      this.fecha = new Date(a.fechaIni)
+      this.huesped.sort((a,b)=> new Date(a.fechaIni).getTime() - new Date(b.fechaIni).getTime());
+      
+     });
+    });
+  }
+
+  public elefante(){
+    this.huespService.getReservacionElefante().subscribe(resp=>{
+      this.huesped = resp;
+     this.huesped.forEach(a => {
+      this.fecha = new Date(a.fechaIni)
+      this.huesped.sort((a,b)=> new Date(a.fechaIni).getTime() - new Date(b.fechaIni).getTime());
       
      });
     });
