@@ -5,5 +5,14 @@
 </ion-header>
 
 <ion-content>
-
+  <div class="header">
+    <div>Bienvenido<br /><span>Villa Ernestina</span></div>
+  </div>
+  <div class="login">
+    <form [formGroup]="myForm">
+      <input formControlName="codigo" type="password" placeholder="Codigo" (keyup.enter)="loginPrueba()" id="password"
+        [(ngModel)]="credenciales.ingreso" /><br />
+      <input type="button" value="Ingresar" (click)="loginPrueba()" />
+    </form>
+  </div>
 </ion-content>
