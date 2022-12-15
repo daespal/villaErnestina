@@ -26,6 +26,10 @@ const routes: Routes = [
       {
         path: 'como-llegar',
         loadChildren: () => import('../como-llegar/como-llegar.module').then( m => m.ComoLlegarPageModule)
+      },
+      {
+        path: 'tab4',
+        loadChildren: () => import('../tab4/tab4.module').then( m => m.Tab4PageModule)
       }
     ]
   }

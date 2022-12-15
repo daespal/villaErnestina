@@ -1,24 +1,20 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
+<div class="body"></div>
+<div class="grad"></div>
+<div class="header">
+  <div>Bienvenido<br /><span>Villa Ernestina</span></div>
+</div>
 
-<ion-content>
-  <div class="header">
-    <div>Bienvenido<br /><span>Villa Ernestina</span></div>
-  </div>
-  <div class="login">
-    <form [formGroup]="myForm">
-      <input
-        formControlName="codigo"
-        type="password"
-        placeholder="Codigo"
-        (keyup.enter)="loginPrueba()"
-        id="password"
-        [(ngModel)]="credenciales.ingreso"
-      /><br />
-      <input type="button" value="Ingresar" (click)="loginPrueba()" />
-    </form>
-  </div>
-</ion-content>
+<div class="login">
+  <br />
+  <form [formGroup]="myForm">
+    <input
+      formControlName="codigo"
+      type="password"
+      placeholder="Contraseña / Password"
+      (keyup.enter)="loginPrueba()"
+      id="password"
+      [(ngModel)]="credenciales.ingreso"
+    /><br />
+    <input type="button" value="Ingresar" (click)="loginPrueba()" />
+  </form>
+</div>

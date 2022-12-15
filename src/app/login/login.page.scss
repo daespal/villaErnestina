@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+
+	color: #fff;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.body{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-image: url(https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/291171172_130022519713959_248049478540679560_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeHNUfpdDMAGx6h2_K_Sc7QRjjSIdR8g24eONIh1HyDbh12CBimu--oenSA1xNMLbx8XsfgtdhF2Qt5HTjf8KinW&_nc_ohc=5NDk78AFbn8AX9eSkEl&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfA0V9j8_HGOc6WcPk2mNK4oNVa-ZRx37I7rdV7fbZcIAQ&oe=639F3B58);
+	background-size: cover;
+	
+	z-index: 0;
+}
+
+
+
+.header{
+	position: absolute;
+	top: calc(50% - 100px);
+	left: calc(50% - 155px);
+	z-index: 2;
+}
+
+.header div{
+	float:none;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 35px;
+	font-weight: bold;
+    font-style:normal;
+}
+
+.header div span{
+	color: #d97d26 !important;
+}
+
+.login{
+	position: absolute;
+	top: calc(50% - 70px);
+	left: calc(50% - 200px);
+	height: 150px;
+	width: 350px;
+    margin: -25px;
+	padding: 55px;
+	z-index: 2;
+}
+
+.login input[type=password]{
+	width: 260px;
+	height: 35px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.login input[type=button]{
+	width: 260px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+.login input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.login input[type=button]:active{
+	opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=button]:focus{
+	outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}

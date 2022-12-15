@@ -1,0 +1,62 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> {{huesped.nombre}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title
+        >Bienvenido {{huesped.nombre}} gracias por reservar en
+        {{huesped.habitacion}}</ion-card-title
+      >
+      <ion-card-subtitle
+        >Puede realizar las siguientes actividades</ion-card-subtitle
+      >
+      <ion-accordion-group expand="inset">
+        <ion-accordion value="first">
+          <ion-item slot="header" color="light">
+            <ion-label>Paseos en lancha</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            1. Renta de lancha de pedales: $200.00 1 hora para 2 adultos y un
+            niño. Mayores informes 3112661762 (esto es un enlace hacia la app de
+            teléfono) <br />
+            Paseo en lancha: 1 a 4 personas $350.00, de 5 a 10 personas $70.00
+            por persona el recorrido. Mayores informes 3112661762 (esto es un
+            enlace hacia la app de teléfono)
+            <br />
+            *Éstos precios no son controlados por los administradores de Villa
+            Ernestina y pueden cambiar en cualquier momento
+          </div>
+        </ion-accordion>
+        <ion-accordion value="second">
+          <ion-item slot="header" color="light">
+            <ion-label>Masajes y Temazcal</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            1. Masajes: $500.00 1 hora, se requiere reservar. Mayores informes
+            3111232609 (esto es un enlace hacia la app de teléfono)
+            <br />
+            2. Temazcal: $200.00 1 hora, sólo los sábados a las 16:00. Mayores
+            informes 3111232609 (esto es un enlace hacia la app de teléfono)
+            <br />
+            *Éstos precios no son controlados por los administradores de Villa
+            Ernestina y pueden cambiar en cualquier momento
+          </div>
+        </ion-accordion>
+        <ion-accordion value="third">
+          <ion-item slot="header" color="light">
+            <ion-label>Ciclismo y Senderismo</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            Disfruta de los paisajes increíbles al caminar o rodar alrededor de
+            La Laguna con una longitud de 8 kilómetros aproximadamente
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

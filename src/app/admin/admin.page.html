@@ -9,7 +9,10 @@
 
 <ion-content>
   <ion-row>
+    <ion-button shape="round" (click)="normal()">Normal</ion-button>
     <ion-button shape="round" (click)="ordenar()">Ordenar</ion-button>
+    <ion-button shape="round" (click)="leon()">León</ion-button>
+    <ion-button shape="round" (click)="elefante()">Elefante</ion-button>
   </ion-row>
   <ion-fab slot="fixed" vertical="bottom" horizontal="end">
     <ion-fab-button>
@@ -24,9 +27,11 @@
             <ion-item (click)="getReservacionById(item.id!)">
               <ion-col>
                 <ion-label> Huésped: <br />{{item.nombre}} </ion-label><br />
+              </ion-col>
+              <ion-col>
                 <ion-label
-                  >Habitacion: <br />
-                  {{item.habitacion}}</ion-label
+                  >Telefono: <br />
+                  {{item.telefono}}</ion-label
                 >
               </ion-col>
               <ion-col>
@@ -34,11 +39,21 @@
                   >Fecha Ingreso:<br />
                   {{item.fechaIni}}</ion-label
                 ><br />
+              </ion-col>
+              <ion-col>
                 <ion-label
                   >Fecha Egreso: <br />
                   {{item.fechaEgr}}</ion-label
                 >
                 <br />
+              </ion-col>
+              <ion-col>
+                <ion-chip
+                  [color]="color(item.habitacion)"
+                  outline="true"
+                  class="ion-float-right"
+                  ><ion-label>{{item.habitacion}}</ion-label></ion-chip
+                >
               </ion-col>
             </ion-item>
             <ion-item-options side="end">

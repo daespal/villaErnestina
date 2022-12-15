@@ -27,6 +27,13 @@ export class ReservacionService {
     this.firestore.collection('Reservacion').add(huesped);
   }
 
+  public addLeon(huesped: Reservacion) {
+    this.firestore.collection('ReservacionLeon').add(huesped);
+  }
+
+  public addElefante(huesped: Reservacion) {
+    this.firestore.collection('ReservacionElefante').add(huesped);
+  }
   validarToken(token: string){
     if (token === this.codigoAdm[0]){
       this.router.navigate(['/admin']);
@@ -61,6 +68,35 @@ export class ReservacionService {
       })
     );
   }
+
+  public getReservacionLeon(): Observable<Reservacion[]> {
+    return this.firestore.collection('ReservacionLeon').snapshotChanges().pipe(
+      map(actions => {
+        return actions.map(a => {
+          console.log(a);
+          const data = a.payload.doc.data() as Reservacion;
+          console.log(data);
+          const id = a.payload.doc.id;
+          return { id, ...data }
+        });
+      })
+    );
+  }
+
+  public getReservacionElefante(): Observable<Reservacion[]> {
+    return this.firestore.collection('ReservacionElefante').snapshotChanges().pipe(
+      map(actions => {
+        return actions.map(a => {
+          console.log(a);
+          const data = a.payload.doc.data() as Reservacion;
+          console.log(data);
+          const id = a.payload.doc.id;
+          return { id, ...data }
+        });
+      })
+    );
+  }
+
   public getAdmin(): Observable<Administrador[]> {
     return this.firestore.collection('Administrador').snapshotChanges().pipe(
       map(actions => {
