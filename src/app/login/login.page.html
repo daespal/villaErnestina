@@ -1,27 +1,20 @@
-<form class="login-form">
-  <p class="login-text">
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fa fa-lock fa-stack-1x"></i>
-    </span>
-  </p>
-  <input
-    class="login-password"
-    formControlName="codigo"
-    type="password"
-    placeholder="Codigo"
-    (keyup.enter)="loginPrueba()"
-    id="password"
-    [(ngModel)]="credenciales.ingreso"
-  />
-  <input
-    type="submit"
-    name="Login"
-    class="login-submit"
-    value="Ingresar"
-    (click)="loginPrueba()"
-  />
-</form>
+<div class="body"></div>
+<div class="grad"></div>
+<div class="header">
+  <div>Bienvenido<br /><span>Villa Ernestina</span></div>
+</div>
 
-<div class="underlay-photo"></div>
-<div class="underlay-black"></div>
+<div class="login">
+  <br />
+  <form [formGroup]="myForm">
+    <input
+      formControlName="codigo"
+      type="password"
+      placeholder="Contraseña / Password"
+      (keyup.enter)="loginPrueba()"
+      id="password"
+      [(ngModel)]="credenciales.ingreso"
+    /><br />
+    <input type="button" value="Ingresar" (click)="loginPrueba()" />
+  </form>
+</div>
