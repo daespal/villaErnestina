@@ -21,7 +21,7 @@ export class ReservacionService {
 
   public url: string = "";
 
-  constructor(private firestore: AngularFirestore, private authFirebase: AngularFireAuth, private router:Router) { }
+  constructor(private firestore: AngularFirestore, private authFirebase: AngularFireAuth, private router: Router) { }
 
   public addHuesped(huesped: Reservacion) {
     this.firestore.collection('Reservacion').add(huesped);
@@ -34,12 +34,12 @@ export class ReservacionService {
   public addElefante(huesped: Reservacion) {
     this.firestore.collection('ReservacionElefante').add(huesped);
   }
-  validarToken(token: string){
-    if (token === this.codigoAdm[0]){
+  validarToken(token: string) {
+    if (token === this.codigoAdm[0]) {
       this.router.navigate(['/admin']);
-    }else if(this.codigoAdm.includes(token)){
+    } else if (this.codigoAdm.includes(token)) {
       let navigation: NavigationExtras = {
-        state:{
+        state: {
           codigoAdm: token
         }
       }
@@ -48,12 +48,23 @@ export class ReservacionService {
 
   }
 
-  public getHuespedByCodigo(token: string){
-    this.huespedes.forEach(item =>{
-      if(item.codigo === token){
+  public getHuespedByCodigo(token: string) {
+    this.huespedes.forEach(item => {
+      if (item.codigo === token) {
         this.huesped = item;
       }
     })
+  }
+  public getHuesped(): Reservacion{
+    return this.huesped;
+  }
+
+  public getFecha(fecha: Date) {
+    this.huespedes.forEach(item => {
+      if (item.fechaIni == fecha.toISOString()) {
+        this.huesped = item;
+      }
+    });
   }
   public getReservacion(): Observable<Reservacion[]> {
     return this.firestore.collection('Reservacion').snapshotChanges().pipe(
@@ -136,7 +147,7 @@ export class ReservacionService {
     return this.url
   }
 
-  stateUser(){
+  stateUser() {
     return this.authFirebase.authState
   }
 

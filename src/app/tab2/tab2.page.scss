@@ -6,3 +6,9 @@
 @import 'swiper/scss/scrollbar';
 @import 'swiper/scss/zoom';
 @import '@ionic/angular/css/ionic-swiper';
+
+ion-img{
+    width: 600px;
+    height: 500px;
+    align-items: center;
+}

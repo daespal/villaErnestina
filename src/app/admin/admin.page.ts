@@ -13,11 +13,11 @@ import { Component, OnInit } from '@angular/core';
 export class AdminPage implements OnInit {
 
   public huesped: Reservacion[];
-  
+
   public huespe: Reservacion;
   public ind: number = 0;
   public codigo: number = Math.random();
-  public fecha:Date;
+  public fecha: Date;
 
   url: string = "";
   constructor(private huespService: ReservacionService, private router: Router, private alertController: AlertController,
@@ -27,14 +27,6 @@ export class AdminPage implements OnInit {
       console.log(this.huesped)
     });
     this.url = this.huespService.setWats();
-    this.huespService.stateUser().subscribe(res => {
-      if (res) {
-        console.log('Esta logeado')
-      } else {
-        console.log('No esta logeado')
-      }
-    }
-    )
   }
 
   public removeReservation(pos: string) {
@@ -47,6 +39,17 @@ export class AdminPage implements OnInit {
   }
 
 
+  public mensajeWhats(tel: string): void {
+
+    const url = "https://api.whatsapp.com/send?phone=52" + tel + "&text=" +
+      "Gracias por tu reservación, puede consultar mas información en el siguiente enlace: https://villaernestinasamao.web.app. Tu token es: ";
+    window.open(url, '_system', 'location=yes');
+  }
+
+  public tokenWhats(tel: string, token: string): void {
+    const toke = "https://api.whatsapp.com/send?phone=52" + tel + "&text=" + token;
+    window.open(toke, '_system', 'location=yes');
+  }
 
 
   public getReservacionById(id: string) {
@@ -99,15 +102,15 @@ export class AdminPage implements OnInit {
     return null;
   }
 
-  public addHuesped(){
+  public addHuesped() {
     this.router.navigate(['/new-reservacion'])
   }
-  
+
   ngOnInit() {
     return;
   }
 
- 
+
 
 
   async alertErrorFecha() {
@@ -140,54 +143,54 @@ export class AdminPage implements OnInit {
     await alert.present();
   }
 
-  public ordenar(){
-    this.huespService.getReservacion().subscribe(resp=>{
+  public ordenar() {
+    this.huespService.getReservacion().subscribe(resp => {
       this.huesped = resp;
 
-     this.huesped.forEach(a => {
-      this.fecha = new Date(a.fechaIni)
-      this.huesped.sort((a,b)=> new Date(a.fechaIni).getTime() - new Date(b.fechaIni).getTime());
-      
-     });
+      this.huesped.forEach(a => {
+        this.fecha = new Date(a.fechaIni)
+        this.huesped.sort((a, b) => new Date(a.fechaIni).getTime() - new Date(b.fechaIni).getTime());
+
+      });
     });
   }
 
-  
-  public normal(){
-    this.huespService.getReservacion().subscribe(resp=>{
+
+  public normal() {
+    this.huespService.getReservacion().subscribe(resp => {
       this.huesped = resp;
-     this.huesped.forEach(a => {
-      this.fecha = new Date(a.fechaIni)
-      this.huesped.sort((a,b)=> new Date(b.fechaIni).getTime() - new Date(a.fechaIni).getTime());
-      
-     });
+      this.huesped.forEach(a => {
+        this.fecha = new Date(a.fechaIni)
+        this.huesped.sort((a, b) => new Date(b.fechaIni).getTime() - new Date(a.fechaIni).getTime());
+
+      });
     });
   }
 
-  public leon(){
-    this.huespService.getReservacionLeon().subscribe(resp=>{
+  public leon() {
+    this.huespService.getReservacionLeon().subscribe(resp => {
       this.huesped = resp;
-     this.huesped.forEach(a => {
-      this.fecha = new Date(a.fechaIni)
-      this.huesped.sort((a,b)=> new Date(a.fechaIni).getTime() - new Date(b.fechaIni).getTime());
-      
-     });
+      this.huesped.forEach(a => {
+        this.fecha = new Date(a.fechaIni)
+        this.huesped.sort((a, b) => new Date(a.fechaIni).getTime() - new Date(b.fechaIni).getTime());
+
+      });
     });
   }
 
-  public elefante(){
-    this.huespService.getReservacionElefante().subscribe(resp=>{
+  public elefante() {
+    this.huespService.getReservacionElefante().subscribe(resp => {
       this.huesped = resp;
-     this.huesped.forEach(a => {
-      this.fecha = new Date(a.fechaIni)
-      this.huesped.sort((a,b)=> new Date(a.fechaIni).getTime() - new Date(b.fechaIni).getTime());
-      
-     });
+      this.huesped.forEach(a => {
+        this.fecha = new Date(a.fechaIni)
+        this.huesped.sort((a, b) => new Date(a.fechaIni).getTime() - new Date(b.fechaIni).getTime());
+
+      });
     });
   }
 
-  public color(col:string){
-    let color="";
+  public color(col: string) {
+    let color = "";
     if (col === "Elefante") {
       color = "warning";
     } else {
