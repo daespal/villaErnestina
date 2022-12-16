@@ -1,20 +1,99 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>{{"MiLlegada"| translate }} <br><br></ion-title>
+    <ion-title>{{"MiLlegada"| translate }} <br /><br /></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-card>
     <ion-card-header>
-      <ion-card-title>{{"Ubi" | translate}}</ion-card-title>
+      <ion-card-title
+        >{{"Ubi" | translate}}
+        <a href="https://maps.app.goo.gl/FQipxag7ad34ughX6 " target="_blank"
+          ><ion-icon name="location-outline"></ion-icon></a
+      ></ion-card-title>
       <ion-card-title>{{"Instrucciones" | translate}}</ion-card-title>
       <ion-card-subtitle>{{"Instruccion" | translate}}</ion-card-subtitle>
-      <ion-card-title>{{"AccesoHab" | translate}}</ion-card-title>
-      <ion-card-subtitle>{{"Acc1" | translate}} <br> {{"Acc2" | translate}} {{huesped.tokens}} </ion-card-subtitle>
-      <ion-card-title>{{"Wifi" | translate}}</ion-card-title>
-      <ion-card-subtitle>{{"Red" | translate}} <br> {{"Pass" | translate}} </ion-card-subtitle>
-      <ion-card-subtitle>{{"RedAl" | translate}} <br> {{"Pass2" | translate}} </ion-card-subtitle>
     </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{"AccesoHab" | translate}}</ion-card-title>
+      <ion-card-subtitle
+        >{{"Acc1" | translate}} <br />
+        {{"Acc2" | translate}} {{huesped.tokens}}
+      </ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{"Wifi" | translate}}</ion-card-title>
+      <ion-card-subtitle
+        >{{"Red" | translate}} <br />
+        {{"Pass" | translate}}
+      </ion-card-subtitle>
+      <ion-card-subtitle
+        >{{"RedAl" | translate}} <br />
+        {{"Pass2" | translate}}
+      </ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{"Streaming" | translate}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <swiper [slidesPerView]="1" [loop]="true">
+        <ng-template swiperSlide>
+          <ion-card>
+            <ion-card-header
+              ><ion-card-title
+                >{{"S1" | translate}}</ion-card-title
+              ></ion-card-header
+            >
+            <ion-card-content>
+              <ion-img
+                src="https://hbomax-images.warnermediacdn.com/2020-05/square%20social%20logo%20400%20x%20400_0.png"
+                width="150"
+                height="150"
+              ></ion-img>
+            </ion-card-content>
+          </ion-card>
+        </ng-template>
+        <ng-template swiperSlide>
+          <ion-card>
+            <ion-card-header
+              ><ion-card-title
+                >{{"S2" | translate}}</ion-card-title
+              ></ion-card-header
+            >
+            <ion-card-content>
+              <ion-img
+                src="https://static-assets.bamgrid.com/product/disneyplus/images/share-default.14fadd993578b9916f855cebafb71e62.png"
+                width="150"
+                height="150"
+              ></ion-img>
+            </ion-card-content>
+          </ion-card>
+          ></ng-template
+        >
+        <ng-template swiperSlide
+          ><ion-card>
+            <ion-card-header
+              ><ion-card-title
+                >{{"S3" | translate}}</ion-card-title
+              ></ion-card-header
+            >
+            <ion-card-content>
+              <ion-img
+                src="https://s1.eestatic.com/2022/03/24/actualidad/659694554_222967910_864x486.jpg"
+                width="150"
+                height="150"
+              ></ion-img>
+            </ion-card-content> </ion-card
+        ></ng-template>
+      </swiper>
+    </ion-card-content>
   </ion-card>
 </ion-content>
