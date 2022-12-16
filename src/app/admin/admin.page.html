@@ -9,10 +9,10 @@
 
 <ion-content>
   <ion-row>
-    <ion-button shape="round" (click)="normal()">Normal</ion-button>
-    <ion-button shape="round" (click)="ordenar()">Ordenar</ion-button>
-    <ion-button shape="round" (click)="leon()">León</ion-button>
-    <ion-button shape="round" (click)="elefante()">Elefante</ion-button>
+    <ion-button class="Boton" ng-repeat="item " (click)="ordenar()">Ordenar</ion-button>
+    <ion-button class="Boton" (click)="elefante()">Elefante</ion-button>
+    <ion-button class="Boton" (click)="leon()">León</ion-button>
+    <ion-button color="danger" class="Boton" (click)="normal()">Normal</ion-button>
   </ion-row>
   <ion-fab slot="fixed" vertical="bottom" horizontal="end">
     <ion-fab-button>
@@ -57,19 +57,15 @@
               </ion-col>
             </ion-item>
             <ion-item-options side="end">
-              <ion-item-option
-                href="https://api.whatsapp.com/send?phone=52{{item.telefono}}&text=Hola%20gracias%20por%20reservar%20con%20nosotros,%20su%20codigo%20de%20acceso%20es%20{{item.codigo}}&20Su%20reservacion%20es%20el%20dia%20{{item.fechaIni}}"
-                expandable
-                color="success"
-              >
+              <ion-item-option expandable color="success" (click)="mensajeWhats(item.telefono)">
                 <ion-icon name="logo-whatsapp"></ion-icon>
               </ion-item-option>
-
-              <ion-item-option
-                expandable
-                color="danger"
-                (click)="presentAlert(item.id!)"
-              >
+              
+              <ion-item-option expandable color="success" (click)="tokenWhats(item.telefono, item.tokens)">
+                <ion-icon name="chatbubble-outline"></ion-icon>
+              </ion-item-option>
+              
+              <ion-item-option expandable color="danger" (click)="presentAlert(item.id!)">
                 <ion-icon name="trash-outline"></ion-icon>
               </ion-item-option>
             </ion-item-options>
