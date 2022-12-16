@@ -29,12 +29,12 @@
     "Salida": "Su fecha de salida es: ",
     "LlegadaTexto": "Somos flexibles con tu llegada: La hora oficial de ingreso al Bungalow son las 15:00 horas. Si existe poca demanda y no hay reservaciones el día anterior podría ser antes, favor de pedir información al respecto.",
     "SalidaTexto": "Somos flexibles con tu salida: La hora oficial de salida al Bungalow son las 12:00 horas. Si existe poca demanda y no hay reservaciones al día siguiente podría ser después, favor de pedir información al respecto.",
-    "RentaLanchas": "1. Renta de lancha de pedales: $200.00 1 hora para 2 adultos y un niño. Mayores informes 3112661762 (esto es un enlace hacia la app de teléfono)",
-    "PaseoLanchas":"Paseo en lancha: 1 a 4 personas $350.00, de 5 a 10 personas $70.00 por persona el recorrido. Mayores informes 3112661762 (esto es un enlace hacia la app de teléfono)",
+    "RentaLanchas": "1. Renta de lancha de pedales: $200.00 1 hora para 2 adultos y un niño.",
+    "PaseoLanchas":"Paseo en lancha: 1 a 4 personas $350.00, de 5 a 10 personas $70.00 por persona el recorrido.",
     "PrecioLanchas": "*Éstos precios no son controlados por los administradores de Villa Ernestina y pueden cambiar en cualquier momento",
     "Masages": "Masajes y Temazcal",
-    "Masaje1": "1. Masajes: $500.00 1 hora, se requiere reservar. Mayores informes 3111232609 (esto es un enlace hacia la app de teléfono)",
-    "Masaje2": "2. Temazcal: $200.00 1 hora, sólo los sábados a las 16:00. Mayores informes 3111232609 (esto es un enlace hacia la app de teléfono)",
+    "Masaje1": "1. Masajes: $500.00 1 hora, se requiere reservar.",
+    "Masaje2": "2. Temazcal: $200.00 1 hora, sólo los sábados a las 16:00.",
     "Mensaje3": "*Éstos precios no son controlados por los administradores de Villa Ernestina y pueden cambiar en cualquier momento",
     "Ciclismo": "Ciclismo y Senderismo",
     "Ciclismo1": "Disfruta de los paisajes increíbles al caminar o rodar alrededor de La Laguna con una longitud de 8 kilómetros aproximadamente",
@@ -48,7 +48,7 @@
 
     "Comidas": "Comidas",
     "Recomendaciones": "Nuestras recomendaciones:",
-    "Resta1": "1. Restaurante Catalina: El mejor chicharrón y ceviche de pescado (comida tradicional de La Laguna). Poner foto de chicharrón y ceviche de pescado",
+    "Resta1": "1. Restaurante Catalina: El mejor chicharrón y ceviche de pescado (comida tradicional de La Laguna).",
     "Resta2": "2. Desayunos: Taquitos La Aurora, Restaurante Lago Azul, Restaurante el desagüe",
     "Resta3": "3. Restaurante La Mata: El mejor postre plátanos con nieve",
     "Resta4": "4. El postre tradicional: capirotada",
@@ -100,5 +100,9 @@
     "S1": "HBO Max",
     "S2": "Disney +",
     "S3": "Netflix",
-    "SAviso": "Favor de ingresar al perfil llamado"
+    "SAviso": "Favor de ingresar al perfil llamado",
+
+    "Sanitizar":"Debes saber que al finalizar cada experiencia, nosotros nos encargamos de sanitizar y desodorizar todas las instalaciones.",
+    "Tabaco":"Restricciones para fumadores",
+    "Tabaco2":"Sólo se permite fumar en las áreas externas a la habitación"
 }

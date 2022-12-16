@@ -11,4 +11,13 @@ ion-img{
     width: 600px;
     height: 500px;
     align-items: center;
-}
+    @media (max-width: 650px){
+      height: 30vh;
+      width: 30vh;
+    }
+  
+    @media (max-width: 480px){
+      height: 20vh;
+      width: 20vh;
+    }
+  }

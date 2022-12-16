@@ -8,7 +8,7 @@
   <ion-accordion-group expand="inset">
     <ion-accordion value="first">
       <ion-item slot="header" color="light">
-        <ion-label>Reglamento General</ion-label>
+        <ion-label>{{"Reglamento" | translate}}</ion-label>
       </ion-item>
       <div class="ion-padding" slot="content">
         <swiper [slidesPerView]="1" [loop]="true">
@@ -74,10 +74,8 @@
         </swiper>
       </div>
     </ion-accordion>
-  </ion-accordion-group>
 
-  <ion-accordion-group expand="inset">
-    <ion-accordion value="first">
+    <ion-accordion value="second">
       <ion-item slot="header" color="light">
         <ion-label>{{"ReglamentoMas" | translate}}</ion-label>
       </ion-item>
@@ -138,6 +136,17 @@
               ></ion-img> </ion-card
           ></ng-template>
         </swiper>
+        <label>{{"Sanitizar" | translate}}</label>
+      </div>
+    </ion-accordion>
+    <ion-accordion value="third">
+      <ion-item slot="header" color="light">
+        <ion-label>{{"Tabaco"| translate }}</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        {{"Tabaco2"| translate }}<ion-img
+          src="https://static.vecteezy.com/system/resources/previews/002/641/068/original/no-smoking-sign-forbidden-sign-icon-isolated-on-white-background-illustration-free-vector.jpg"
+        ></ion-img>
       </div>
     </ion-accordion>
   </ion-accordion-group>

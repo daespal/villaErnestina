@@ -9,13 +9,16 @@ import { Tab4PageRoutingModule } from './tab4-routing.module';
 import { Tab4Page } from './tab4.page';
 import { TranslateModule } from '@ngx-translate/core';
 
+import { SwiperModule } from 'swiper/angular';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     Tab4PageRoutingModule,
-    TranslateModule
+    TranslateModule,
+    SwiperModule
   ],
   declarations: [Tab4Page]
 })

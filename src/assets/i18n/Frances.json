@@ -28,12 +28,12 @@
     "Salida": "Votre date de départ est: ",
     "LlegadaTexto": "Nous sommes flexibles avec votre arrivée : L'heure officielle pour entrer dans le Bungalow est 15h00. S'il y a peu de demande et qu'il n'y a pas de réservation la veille, cela pourrait être plus tôt, veuillez demander des informations à ce sujet.",
     "SalidaTexto": "Nous sommes flexibles avec votre départ : L'heure de départ officielle vers le Bungalow est 12h00. S'il y a peu de demande et qu'il n'y a pas de réservations, le lendemain pourrait être plus tard, veuillez demander des informations à ce sujet.",
-    "RentaLanchas": "1. Location de pédalos : 200,00 $ 1 heure pour 2 adultes et un enfant. Plus de rapports 3112661762 (il s'agit d'un lien vers l'application téléphonique).",
-    "PaseoLanchas":"Promenade en bateau : 1 à 4 personnes 350,00 $, de 5 à 10 personnes 70,00 $ par personne pour la visite. Plus de rapports 3112661762 (il s'agit d'un lien vers l'application téléphonique).",
+    "RentaLanchas": "1. Location de pédalos : 200,00 $ 1 heure pour 2 adultes et un enfant. ",
+    "PaseoLanchas":"Promenade en bateau : 1 à 4 personnes 350,00 $, de 5 à 10 personnes 70,00 $ par personne pour la visite.",
     "PrecioLanchas": "*Ces prix ne sont pas contrôlés par les administrateurs de la Villa Ernestina et peuvent changer à tout moment",
     "Masages": "Massages et Temazcal",
-    "Masaje1": "1. Massages : $500 1 heure, réservation requise. Plus de rapports 3111232609 (il s'agit d'un lien vers l'application téléphonique).",
-    "Masaje2": "2. Temazcal: $200 1 heure, uniquement le samedi à 16 h. Plus de rapports 3111232609 (il s'agit d'un lien vers l'application téléphonique).",
+    "Masaje1": "1. Massages : $500 1 heure, réservation requise. ",
+    "Masaje2": "2. Temazcal: $200 1 heure, uniquement le samedi à 16 h. ",
     "Mensaje3": "*Ces prix ne sont pas contrôlés par les administrateurs de la Villa Ernestina et peuvent changer à tout moment",
     "Ciclismo": "Vélo et randonnée",
     "Ciclismo1": "Profitez des paysages incroyables en marchant ou en roulant autour de La Laguna avec une longueur d'environ 8 kilomètres",
@@ -48,7 +48,7 @@
     
     "Comidas": "Nourriture",
     "Recomendaciones": "Nos recommandations:",
-    "Resta1": "1. Restaurant Catalina : Les meilleures couennes de porc et ceviche de poisson (cuisine traditionnelle de La Laguna). Poster une photo de couennes de porc et de ceviche de poisson",
+    "Resta1": "1. Restaurant Catalina : Les meilleures couennes de porc et ceviche de poisson (cuisine traditionnelle de La Laguna).",
     "Resta2": "2. Petit déjeuner: La Aurora Taquitos, Restaurant Lago Azul, Restaurant El Desagüe",
     "Resta3": "3. Restaurant La Mata: Les meilleures bananes dessert avec de la neige",
     "Resta4": "4. Le dessert traditionnel : la capirotada",
@@ -100,5 +100,9 @@
     "S1": "HBO Max",
     "S2": "Disney +",
     "S3": "Netflix",
-    "SAviso": "Veuillez entrer le profil appelé"
+    "SAviso": "Veuillez entrer le profil appelé",
+
+    "Sanitizar":"Sachez qu'à la fin de chaque expérience, nous nous chargeons de désinfecter et de désodoriser toutes les installations.",
+    "Tabaco":"Restrictions pour les fumeurs",
+    "Tabaco2":"Fumer n'est autorisé qu'à l'extérieur de la chambre"
 }
