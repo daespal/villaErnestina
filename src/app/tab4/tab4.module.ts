@@ -11,6 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
 
 import { SwiperModule } from 'swiper/angular';
 
+
 @NgModule({
   imports: [
     CommonModule,
@@ -18,7 +19,8 @@ import { SwiperModule } from 'swiper/angular';
     IonicModule,
     Tab4PageRoutingModule,
     TranslateModule,
-    SwiperModule
+    SwiperModule,
+    
   ],
   declarations: [Tab4Page]
 })
