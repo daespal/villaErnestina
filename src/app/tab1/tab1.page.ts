@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component,ViewEncapsulation } from '@angular/core';
+import SwiperCore, { Autoplay, Keyboard, Pagination, Scrollbar, Zoom } from 'swiper';
+import { IonicSlides } from '@ionic/angular';
+SwiperCore.use([Autoplay, Keyboard, Pagination, Scrollbar, Zoom, IonicSlides]);
 import { Reservacion } from '../models/reservacion';
 import { TranslateService } from '@ngx-translate/core';
 import { ReservacionService } from '../services/reservacion.service';
@@ -6,7 +9,8 @@ import { ReservacionService } from '../services/reservacion.service';
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss']
+  styleUrls: ['tab1.page.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class Tab1Page {
 
