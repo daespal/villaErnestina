@@ -42,7 +42,7 @@ export class AdminPage implements OnInit {
   public mensajeWhats(tel: string): void {
 
     const url = "https://api.whatsapp.com/send?phone=52" + tel + "&text=" +
-      "Gracias por tu reservación, puede consultar mas información en el siguiente enlace: https://villaernestinasamao.web.app. Tu token es: ";
+      "Gracias por tu reservación, puede consultar mas información en el siguiente enlace: https://villaernestinap.web.app Tu token es: ";
     window.open(url, '_system', 'location=yes');
   }
 
