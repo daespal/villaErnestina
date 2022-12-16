@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      {{"Reglamento" | translate}}
-    </ion-title>
+    <ion-title> {{"Interes" | translate}} </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -16,6 +14,33 @@
             <ion-label>{{"Recomendaciones"| translate }}</ion-label>
           </ion-item>
           <div class="ion-padding" slot="content">
+            <swiper [slidesPerView]="1" [loop]="true">
+              <ng-template swiperSlide>
+                <ion-card>
+                  <ion-img
+                    src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/299115344_142776608438550_6554169168240082554_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHos4gKxjDqQdWpT6iXJeDmK5SM7ItuzX8rlIzsi27Nfw3bf-kjTdeqij1DEKvEU9Q81tJOrScg_qLJO46b68Dh&_nc_ohc=U0OmrEo735EAX8_f89m&_nc_oc=AQmodTK07-nQbuBQm7ln6fF3o8Yjr3m0mxuab5EzTb4Zyl_JhDdpeO2JAKPzaH4iRifTWZp7sd_qhcrItmAk72df&tn=UYrd6BJAFJFR8vuk&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfBwQlngs3OUmG_Q9Kf7hJJvZBGuoLEOm0iaHDvAptI97g&oe=63A00EE5"
+                    width="150"
+                    height="150"
+                  ></ion-img>
+                </ion-card>
+              </ng-template>
+              <ng-template swiperSlide
+                ><ion-card>
+                  <ion-img
+                    src="https://vallartalifestyles.com/wp-content/uploads/2020/01/samao_6-1.jpg"
+                    width="150"
+                    height="150"
+                  ></ion-img> </ion-card
+              ></ng-template>
+              <ng-template swiperSlide
+                ><ion-card>
+                  <ion-img
+                    src="https://gentenayarit.com/wp-content/uploads/2019/09/ceviportada.jpg"
+                    width="150"
+                    height="150"
+                  ></ion-img> </ion-card
+              ></ng-template>
+            </swiper>
             {{"Resta1"| translate }} <br />
             {{"Resta2"| translate }} <br />
             {{"Resta3"| translate }} <br />
@@ -23,84 +48,141 @@
           </div>
         </ion-accordion>
       </ion-accordion-group>
-    <ion-card-title>{{"Laguna" | translate}}</ion-card-title>
-    <ion-accordion-group expand="inset">
-      <ion-accordion value="first">
-        <ion-item slot="header" color="light">
-          <ion-label>{{"Leyenda"| translate }}</ion-label>
-        </ion-item>
-        <div class="ion-padding" slot="content">
-          {{"LeyendaP1"| translate }} <br><br>
-          {{"LeyendaP2"| translate }} <br><br>
-          {{"LeyendaP3"| translate }} <br><br>
-          {{"LeyendaP4"| translate }} <br><br>
-          {{"LeyendaP5"| translate }} <br><br>
-          {{"LeyendaP6"| translate }} <br><br>
-          {{"LeyendaP7"| translate }} <br><br>
-        </div>
-      </ion-accordion>
-    </ion-accordion-group>
-    <ion-card-title>{{"Historia" | translate}}</ion-card-title>
-    <ion-accordion-group expand="inset">
-      <ion-accordion value="first">
-        <ion-item slot="header" color="light">
-          <ion-label>{{"Historia"| translate }}</ion-label>
-        </ion-item>
-        <div class="ion-padding" slot="content">
-          {{"Historia1"| translate }} <br><br>
-          {{"Historia2"| translate }} <br><br>
-          {{"Historia3"| translate }} <br><br>
-        </div>
-      </ion-accordion>
-    </ion-accordion-group>
-    <ion-card-title>{{"Historia" | translate}}</ion-card-title>
-    <ion-accordion-group expand="inset">
-      <ion-accordion value="first">
-        <ion-item slot="header" color="light">
-          <ion-label>{{"Historia"| translate }}</ion-label>
-        </ion-item>
-        <div class="ion-padding" slot="content">
-          {{"Historia1"| translate }} <br><br>
-          {{"Historia2"| translate }} <br><br>
-          {{"Historia3"| translate }} <br><br>
-        </div>
-      </ion-accordion>
-    </ion-accordion-group>
-    <ion-card-title>{{"LaLaguna" | translate}}</ion-card-title>
-    <ion-accordion-group expand="inset">
-      <ion-accordion value="first">
-        <ion-item slot="header" color="light">
-          <ion-label>{{"LaLaguna"| translate }}</ion-label>
-        </ion-item>
-        <div class="ion-padding" slot="content">
-          {{"LaLaguna1"| translate }} <br><br>
-          {{"LaLaguna2"| translate }} <br><br>
-          {{"LaLaguna3"| translate }} <br><br>
-          {{"LaLaguna4"| translate }} <br><br>
-          {{"LaLaguna5"| translate }} <br><br>
-          {{"LaLaguna6"| translate }} <br><br>
-          {{"LaLaguna7"| translate }} <br><br>
-        </div>
-      </ion-accordion>
-    </ion-accordion-group>
-    <ion-card-title>{{"TelefonosEmer" | translate}}</ion-card-title>
-    <ion-accordion-group expand="inset">
-      <ion-accordion value="first">
-        <ion-item slot="header" color="light">
-          <ion-label>{{"Telefonos"| translate }}</ion-label>
-        </ion-item>
-        <div class="ion-padding" slot="content">
-          {{"Tel1"| translate }} <br><br>
-          {{"Tel1A"| translate }} <br><br>
-          {{"Tel1B"| translate }} <br><br>
-          {{"Tel2"| translate }} <br><br>
-          {{"Tel2A"| translate }} <br><br>
-          {{"Tel3"| translate }} <br><br>
-          {{"Tel4"| translate }} <br><br>
-          {{"Tel5"| translate }} <br><br>
-        </div>
-      </ion-accordion>
-    </ion-accordion-group>
+      <ion-card-title>{{"Laguna" | translate}}</ion-card-title>
+      <ion-accordion-group expand="inset">
+        <ion-accordion value="first">
+          <ion-item slot="header" color="light">
+            <ion-label>{{"Leyenda"| translate }}</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            <ion-img
+              src="https://corporacionphantom.files.wordpress.com/2017/11/ca48b-maxresdefault2b252832529.jpg"
+            ></ion-img>
+            {{"LeyendaP1"| translate }} <br /><br />
+            {{"LeyendaP2"| translate }} <br /><br />
+            {{"LeyendaP3"| translate }} <br /><br />
+            {{"LeyendaP4"| translate }} <br /><br />
+            {{"LeyendaP5"| translate }} <br /><br />
+            {{"LeyendaP6"| translate }} <br /><br />
+            {{"LeyendaP7"| translate }} <br /><br />
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+      <ion-card-title>{{"Historia" | translate}}</ion-card-title>
+      <ion-accordion-group expand="inset">
+        <ion-accordion value="first">
+          <ion-item slot="header" color="light">
+            <ion-label>{{"Historia"| translate }}</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            <ion-img
+              src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2021/08/conquista-de-mexico-3-e1567824075926.jpg"
+            ></ion-img>
+            {{"Historia1"| translate }} <br /><br />
+            {{"Historia2"| translate }} <br /><br />
+            {{"Historia3"| translate }} <br /><br />
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+
+      <ion-card-title>{{"LaLaguna" | translate}}</ion-card-title>
+      <ion-accordion-group expand="inset">
+        <ion-accordion value="first">
+          <ion-item slot="header" color="light">
+            <ion-label>{{"LaLaguna"| translate }}</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            <swiper [slidesPerView]="1" [loop]="true">
+              <ng-template swiperSlide>
+                <ion-card>
+                  <ion-img
+                    src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/291171172_130022519713959_248049478540679560_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeHNUfpdDMAGx6h2_K_Sc7QRjjSIdR8g24eONIh1HyDbh12CBimu--oenSA1xNMLbx8XsfgtdhF2Qt5HTjf8KinW&_nc_ohc=5NDk78AFbn8AX9eSkEl&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfBaP3JG7KNa6j9XNfZ7xe1ZI6wnBnpntB3Zqt1w4iEpbQ&oe=63A13598"
+                    width="150"
+                    height="150"
+                  ></ion-img>
+                </ion-card>
+              </ng-template>
+              <ng-template swiperSlide
+                ><ion-card>
+                  <ion-img
+                    src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/295597267_137491805633697_4528950829476563055_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHE8Un-12t1izhNBzvNfvDhX_GZfqbDixhf8Zl-psOLGM14VgrHohOND76LJy5VhKgY6r2i3JJquBZa4csq9hk9&_nc_ohc=KdMhpvjKdz0AX_GeWAr&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfBNqXJRWb97GTS4ozPXpLBbHEpNEjrkd_dOtDdYAtMFWA&oe=63A0180C"
+                    width="150"
+                    height="150"
+                  ></ion-img> </ion-card
+              ></ng-template>
+              <ng-template swiperSlide
+                ><ion-card>
+                  <ion-img
+                    src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/292455270_133332942716250_4113916002957891802_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFiVcykm7kM9BlIS3NvrJJ0bSAEH4OGqoZtIAQfg4aqhnXV0s1WVCk_073a_O6kwVuedtGayppCiLCD-tevqR3j&_nc_ohc=7kS_lwJ4exkAX9Tz8ID&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfAVKGcmCm1Tp7zEND8T_FJGg1bzZTl_MLMYJ4Pzuffw7g&oe=63A0B7BF"
+                    width="150"
+                    height="150"
+                  ></ion-img> </ion-card
+              ></ng-template>
+              <ng-template swiperSlide
+                ><ion-card>
+                  <ion-img
+                    src="http://www.corazondenayarit.com/wp-content/uploads/2019/10/laguna-santa-maria-del-oro-nayarit-ecoturismo5.jpg"
+                    width="150"
+                    height="150"
+                  ></ion-img> </ion-card
+              ></ng-template>
+            </swiper>
+            {{"LaLaguna1"| translate }} <br /><br />
+            {{"LaLaguna2"| translate }} <br /><br />
+            {{"LaLaguna3"| translate }} <br /><br />
+            {{"LaLaguna4"| translate }} <br /><br />
+            {{"LaLaguna5"| translate }} <br /><br />
+            {{"LaLaguna6"| translate }} <br /><br />
+            {{"LaLaguna7"| translate }} <br /><br />
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+      <ion-card-title>{{"TelefonosEmer" | translate}}</ion-card-title>
+      <ion-accordion-group expand="inset">
+        <ion-accordion value="first">
+          <ion-item slot="header" color="light">
+            <ion-label>{{"Telefonos"| translate }}</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            {{"Tel1"| translate }}
+            <br /><br />
+            {{"Tel1A"| translate }}
+            <a href="tel:+523111221670" style="text-decoration: none">
+              3111221670</a
+            >
+            <br /><br />
+            {{"Tel1B"| translate }}<a
+              href="tel:+523111227455"
+              style="text-decoration: none"
+            >
+              3111227455</a
+            >
+
+            <br /><br />
+            {{"Tel2"| translate }}
+
+            <br /><br />
+            {{"Tel2A"| translate }}
+            <a href="tel:+523112037754" style="text-decoration: none">
+              3112037754</a
+            ><br /><br />
+            {{"Tel3"| translate }}<a
+              href="tel:+523111143398"
+              style="text-decoration: none"
+            >
+              3111143398</a
+            >
+            <br /><br />
+            {{"Tel4"| translate }}
+            <a href="tel:+52911" style="text-decoration: none"> 911</a
+            ><br /><br />
+            {{"Tel5"| translate }}
+            <a href="tel:+523272440259" style="text-decoration: none">
+              3272440259</a
+            ><br /><br />
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
     </ion-card-header>
   </ion-card>
 </ion-content>

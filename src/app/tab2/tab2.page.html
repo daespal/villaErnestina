@@ -1,17 +1,14 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      {{huesped.nombre}}
-    </ion-title>
+    <ion-title> {{huesped.nombre}} </ion-title>
   </ion-toolbar>
 </ion-header>
-
 
 <ion-content [fullscreen]="true">
   <ion-accordion-group expand="inset">
     <ion-accordion value="first">
       <ion-item slot="header" color="light">
-        <ion-label>Paseos en lancha</ion-label>
+        <ion-label>{{"Reglamento" | translate}}</ion-label>
       </ion-item>
       <div class="ion-padding" slot="content">
         <swiper [slidesPerView]="1" [loop]="true">
@@ -33,7 +30,7 @@
                 <ion-card-title>{{"Cuidar" | translate}}</ion-card-title>
               </ion-card-header>
               <ion-img
-                src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/316835824_145088924946566_6080023269696187635_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGAIRCoQjjZr0Rz9eJWf_Q4Qu1J-0aAXxxC7Un7RoBfHGygcNXc9WDr32K0rMDddg0mwLRd0xiMyeGIU1G1WpNj&_nc_ohc=ZPqKGDDJTI4AX_dUkwG&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfDIqUKHXNG8zhj91KFhxX31_pSYKKj5My4KMX-ZzuLdfg&oe=639F7B81"
+                src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/289255793_128993186483559_3011896378533691818_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFu3juHnKvT4YDRrCdKM7qN0uE3-1hTgjzS4Tf7WFOCPHqZFn9SELxBY1KW4nzNtAQ2q9Y10wEKdIPIH__d9kMU&_nc_ohc=8SOqEVFpBBAAX_3NRYv&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfATJkl76IsVIF2h7GhK2uNH1Utvs-I4eM3d05FdSgIBOA&oe=63A11887"
                 width="150"
                 height="150"
               ></ion-img> </ion-card
@@ -41,26 +38,20 @@
           <ng-template swiperSlide
             ><ion-card>
               <ion-card-header>
-                <ion-card-title
-                  >{{"Eficientar" | translate}}
-                </ion-card-title>
+                <ion-card-title>{{"Eficientar" | translate}} </ion-card-title>
               </ion-card-header>
               <ion-img
-                src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/316835824_145088924946566_6080023269696187635_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGAIRCoQjjZr0Rz9eJWf_Q4Qu1J-0aAXxxC7Un7RoBfHGygcNXc9WDr32K0rMDddg0mwLRd0xiMyeGIU1G1WpNj&_nc_ohc=ZPqKGDDJTI4AX_dUkwG&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfDIqUKHXNG8zhj91KFhxX31_pSYKKj5My4KMX-ZzuLdfg&oe=639F7B81"
+                src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/284997630_117361100980101_4330654335182971375_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFJFY8paR0oY2h1vzugiARONxJWgpfPmp43ElaCl8-anturbE6_7Fd8NVR2_wKC78_cV5UwjRazGm4WGX1dFO6-&_nc_ohc=0VB0C8Gth1sAX8xFHRc&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfBuwuZvVYBiaX_tus7X8V3vOvcrcUwXNNrWwfJ7bIMW_g&oe=63A1205F"
                 width="150"
                 height="150"
               ></ion-img> </ion-card></ng-template
           ><ng-template swiperSlide
             ><ion-card>
               <ion-card-header>
-                <ion-card-title
-                  >{{"Huespedes" | translate}}
-                </ion-card-title>
+                <ion-card-title>{{"Huespedes" | translate}} </ion-card-title>
               </ion-card-header>
               <ion-img
-                src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/316835824_145088924946566_6080023269696187635_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGAIRCoQjjZr0Rz9eJWf_Q4Qu1J-0aAXxxC7Un7RoBfHGygcNXc9WDr32K0rMDddg0mwLRd0xiMyeGIU1G1WpNj&_nc_ohc=ZPqKGDDJTI4AX_dUkwG&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfDIqUKHXNG8zhj91KFhxX31_pSYKKj5My4KMX-ZzuLdfg&oe=639F7B81"
-                width="150"
-                height="150"
+                src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/294457269_136903142359230_1353581309559738937_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeExwh0QHsKR_J_wByN5dUUFF-YrhHTH3_4X5iuEdMff_sI78EAZOgOLQ3TvRQdvjlNGOyGlAzCMVzWkiRHVNsuk&_nc_ohc=R6-Xxk7jp4IAX87V7qC&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfBsDBFtephundAcOuIlw_rDsBziHRMQuCwoMRV6zh4VPA&oe=63A13BED"
               ></ion-img> </ion-card></ng-template
           ><ng-template swiperSlide
             ><ion-card>
@@ -69,12 +60,13 @@
                   >{{"Evitar" | translate}}
                   <a
                     href="https://dof.gob.mx/nota_detalle.php?codigo=4706988&fecha=22/06/1994#gsc.tab=0"
+                    target="_blank"
                     >NOM-081-ECOL-1994</a
                   ></ion-card-title
                 >
               </ion-card-header>
               <ion-img
-                src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/316835824_145088924946566_6080023269696187635_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGAIRCoQjjZr0Rz9eJWf_Q4Qu1J-0aAXxxC7Un7RoBfHGygcNXc9WDr32K0rMDddg0mwLRd0xiMyeGIU1G1WpNj&_nc_ohc=ZPqKGDDJTI4AX_dUkwG&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfDIqUKHXNG8zhj91KFhxX31_pSYKKj5My4KMX-ZzuLdfg&oe=639F7B81"
+                src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/299115344_142776608438550_6554169168240082554_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHos4gKxjDqQdWpT6iXJeDmK5SM7ItuzX8rlIzsi27Nfw3bf-kjTdeqij1DEKvEU9Q81tJOrScg_qLJO46b68Dh&_nc_ohc=U0OmrEo735EAX8_f89m&_nc_oc=AQmodTK07-nQbuBQm7ln6fF3o8Yjr3m0mxuab5EzTb4Zyl_JhDdpeO2JAKPzaH4iRifTWZp7sd_qhcrItmAk72df&tn=UYrd6BJAFJFR8vuk&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfBwQlngs3OUmG_Q9Kf7hJJvZBGuoLEOm0iaHDvAptI97g&oe=63A00EE5"
                 width="150"
                 height="150"
               ></ion-img> </ion-card
@@ -82,81 +74,80 @@
         </swiper>
       </div>
     </ion-accordion>
+
+    <ion-accordion value="second">
+      <ion-item slot="header" color="light">
+        <ion-label>{{"ReglamentoMas" | translate}}</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <swiper [slidesPerView]="1" [loop]="true">
+          <ng-template swiperSlide>
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>{{"Todas" | translate}}</ion-card-title>
+              </ion-card-header>
+              <ion-img
+                src="https://curiosfera-animales.com/wp-content/uploads/2016/06/Remedios-caseros-para-quitar-pulgas-en-perros.jpg"
+                width="150"
+                height="150"
+              ></ion-img>
+            </ion-card>
+          </ng-template>
+          <ng-template swiperSlide
+            ><ion-card>
+              <ion-card-header>
+                <ion-card-title>{{"Si" | translate}}</ion-card-title>
+              </ion-card-header>
+              <ion-img
+                src="https://www.prensalibre.com/wp-content/uploads/2020/06/ACE-mordida-perro.jpg?quality=52"
+                width="150"
+                height="150"
+              ></ion-img> </ion-card
+          ></ng-template>
+          <ng-template swiperSlide
+            ><ion-card>
+              <ion-card-header>
+                <ion-card-title>{{"No" | translate}} </ion-card-title>
+              </ion-card-header>
+              <ion-img
+                src="https://estaticos.muyinteresante.es/uploads/images/article/570b65e55bafe88a438b456a/perro_0.jpg"
+                width="150"
+                height="150"
+              ></ion-img> </ion-card></ng-template
+          ><ng-template swiperSlide
+            ><ion-card>
+              <ion-card-header>
+                <ion-card-title>{{"En" | translate}} </ion-card-title>
+              </ion-card-header>
+              <ion-img
+                src="http://cdn.shopify.com/s/files/1/1574/5941/articles/banar-a-tu-perro.jpg?v=1488999769"
+                width="150"
+                height="150"
+              ></ion-img> </ion-card></ng-template
+          ><ng-template swiperSlide
+            ><ion-card>
+              <ion-card-header>
+                <ion-card-title>{{"SiTu" | translate}} </ion-card-title>
+              </ion-card-header>
+              <ion-img
+                src="http://cdn.shopify.com/s/files/1/1574/5941/articles/banar-a-tu-perro.jpg?v=1488999769"
+                width="150"
+                height="150"
+              ></ion-img> </ion-card
+          ></ng-template>
+        </swiper>
+        <label>{{"Sanitizar" | translate}}</label>
+      </div>
+    </ion-accordion>
+    <ion-accordion value="third">
+      <ion-item slot="header" color="light">
+        <ion-label>{{"Tabaco"| translate }}</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        {{"Tabaco2"| translate }}<ion-img
+          src="https://static.vecteezy.com/system/resources/previews/002/641/068/original/no-smoking-sign-forbidden-sign-icon-isolated-on-white-background-illustration-free-vector.jpg"
+        ></ion-img>
+      </div>
+    </ion-accordion>
   </ion-accordion-group>
-
-
-
-
-
-    <ion-accordion-group expand="inset">
-      <ion-accordion value="first">
-        <ion-item slot="header" color="light">
-          <ion-label>{{"ReglamentoMas" | translate}}</ion-label>
-        </ion-item>
-        <div class="ion-padding" slot="content">
-          <swiper [slidesPerView]="1" [loop]="true">
-            <ng-template swiperSlide>
-              <ion-card>
-                <ion-card-header>
-                  <ion-card-title>{{"Todas" | translate}}</ion-card-title>
-                </ion-card-header>
-                <ion-img
-                  src="https://curiosfera-animales.com/wp-content/uploads/2016/06/Remedios-caseros-para-quitar-pulgas-en-perros.jpg"
-                  width="150"
-                  height="150"
-                ></ion-img>
-              </ion-card>
-            </ng-template>
-            <ng-template swiperSlide
-              ><ion-card>
-                <ion-card-header>
-                  <ion-card-title>{{"Si" | translate}}</ion-card-title>
-                </ion-card-header>
-                <ion-img
-                  src="https://www.prensalibre.com/wp-content/uploads/2020/06/ACE-mordida-perro.jpg?quality=52"
-                  width="150"
-                  height="150"
-                ></ion-img> </ion-card
-            ></ng-template>
-            <ng-template swiperSlide
-              ><ion-card>
-                <ion-card-header>
-                  <ion-card-title
-                    >{{"No" | translate}}
-                  </ion-card-title>
-                </ion-card-header>
-                <ion-img
-                  src="https://estaticos.muyinteresante.es/uploads/images/article/570b65e55bafe88a438b456a/perro_0.jpg"
-                  width="150"
-                  height="150"
-                ></ion-img> </ion-card></ng-template
-            ><ng-template swiperSlide
-              ><ion-card>
-                <ion-card-header>
-                  <ion-card-title
-                    >{{"En" | translate}}
-                  </ion-card-title>
-                </ion-card-header>
-                <ion-img
-                  src="http://cdn.shopify.com/s/files/1/1574/5941/articles/banar-a-tu-perro.jpg?v=1488999769"
-                  width="150"
-                  height="150"
-                ></ion-img> </ion-card></ng-template
-            ><ng-template swiperSlide
-              ><ion-card>
-                <ion-card-header>
-                  <ion-card-title
-                    >{{"SiTu" | translate}}
-                    </ion-card-title>
-                </ion-card-header>
-                <ion-img
-                  src="http://cdn.shopify.com/s/files/1/1574/5941/articles/banar-a-tu-perro.jpg?v=1488999769"
-                  width="150"
-                  height="150"
-                ></ion-img> </ion-card
-            ></ng-template>
-          </swiper>
-        </div>
-      </ion-accordion>
-    </ion-accordion-group>
 </ion-content>

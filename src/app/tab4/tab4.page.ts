@@ -1,11 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { OnInit } from '@angular/core';
+import { Component,ViewEncapsulation } from '@angular/core';
+import SwiperCore, { Autoplay, Keyboard, Pagination, Scrollbar, Zoom } from 'swiper';
+import { IonicSlides } from '@ionic/angular';
+SwiperCore.use([Autoplay, Keyboard, Pagination, Scrollbar, Zoom, IonicSlides]);
 import { Reservacion } from '../models/reservacion';
+
 
 
 @Component({
   selector: 'app-tab4',
   templateUrl: './tab4.page.html',
   styleUrls: ['./tab4.page.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class Tab4Page implements OnInit {
 
@@ -23,6 +29,15 @@ export class Tab4Page implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
+
+  //public video(){
+    //this.videoPlayer.play('/assets/video/videoVillaErnestina.mp4').then(() => {
+    ///  console.log('video completed');
+    // }).catch(err => {
+    //  console.log(err);
+    // });
+//  }
 
 }

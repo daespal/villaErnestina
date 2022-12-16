@@ -28,12 +28,12 @@
     "Salida": "Your departure date is: ",
     "LlegadaTexto": "We are flexible with your arrival: The official time to enter the Bungalow is 3:00 p.m. If there is little demand and there are no reservations the day before, it could be earlier, please ask for information about it.",
     "SalidaTexto": "We are flexible with your departure: The official departure time to the Bungalow is 12:00 noon. If there is little demand and there are no reservations the next day could be later, please ask for information about it.",
-    "RentaLanchas": "1. Pedal boat rental: $200.00 1 hour for 2 adults and one child. More reports 3112661762 (this is a link to the phone app)",
-    "PaseoLanchas":"Boat ride: 1 to 4 people $350.00, from 5 to 10 people $70.00 per person for the tour. More reports 3112661762.",
+    "RentaLanchas": "1. Pedal boat rental: $200.00 1 hour for 2 adults and one child.",
+    "PaseoLanchas":"Boat ride: 1 to 4 people $350.00, from 5 to 10 people $70.00 per person for the tour.",
     "PrecioLanchas": "*These prices are not controlled by the administrators of Villa Ernestina and may change at any time.",
     "Masages": "Massajes y Temazcal",
-    "Masaje1": "1. Massages: $500.00 1 hour, reservation required. More reports 3111232609.",
-    "Masaje2": "2. Temazcal: $200.00 1 hour, only on Saturdays at 4:00 p.m. More reports 3111232609.",
+    "Masaje1": "1. Massages: $500.00 1 hour, reservation required.",
+    "Masaje2": "2. Temazcal: $200.00 1 hour, only on Saturdays at 4:00 p.m. ",
     "Mensaje3": "*These prices are not controlled by the administrators of Villa Ernestina and may change at any time.",
     "Ciclismo": "Biking and Hiking",
     "Ciclismo1": "Enjoy the incredible landscapes when walking or rolling around La Laguna with a length of approximately 8 kilometers",
@@ -48,7 +48,7 @@
 
     "Comidas": "Foods",
     "Recomendaciones": "Our recommendations:",
-    "Resta1": "1. Catalina Restaurant: The best pork rinds and fish ceviche (traditional food from La Laguna). Post a picture of pork rinds and fish ceviche",
+    "Resta1": "1. Catalina Restaurant: The best pork rinds and fish ceviche (traditional food from La Laguna). ",
     "Resta2": "2. Breakfast: La Aurora Taquitos, Lago Azul Restaurant, El Desagüe Restaurant",
     "Resta3": "3. La Mata Restaurant: The best dessert bananas with snow",
     "Resta4": "4. The traditional dessert: capirotada",
@@ -100,5 +100,9 @@
     "S1": "HBO Max",
     "S2": "Disney +",
     "S3": "Netflix",
-    "SAviso": "Please enter the profile called"
+    "SAviso": "Please enter the profile called",
+
+    "Sanitizar":"You should know that at the end of each experience, we take care of sanitizing and deodorizing all the facilities.",
+    "Tabaco":"Restrictions for smokers",
+    "Tabaco2":"Smoking is only allowed in areas outside the room."
 }

@@ -10,65 +10,162 @@
   </ion-item>
   <ion-card>
     <ion-card-header>
-      <ion-card-title>{{"Bienvenido" | translate}} {{huesped.nombre}} {{"Gracias" | translate}} {{huesped.habitacion}}</ion-card-title>
-      <ion-card-title>{{"Llegada" | translate}} {{huesped.fechaIni}}</ion-card-title>
+      <ion-card-title
+        >{{"Bienvenido" | translate}} {{huesped.nombre}} {{"Gracias" |
+        translate}} {{huesped.habitacion}}</ion-card-title
+      >
+      <ion-card-title
+        >{{"Llegada" | translate}} {{huesped.fechaIni}}</ion-card-title
+      >
       <ion-card-subtitle>{{"LlegadaTexto" | translate}}</ion-card-subtitle>
-      <ion-card-title>{{"Salida" | translate}} {{huesped.fechaEgr}}</ion-card-title>
+      <ion-card-title
+        >{{"Salida" | translate}} {{huesped.fechaEgr}}</ion-card-title
+      >
       <ion-card-subtitle>{{"SalidaTexto" | translate}}</ion-card-subtitle>
       <ion-card-title>{{"Actividades" | translate}}</ion-card-title>
-          <ion-accordion-group expand="inset">
-            <ion-accordion value="first">
-              <ion-item slot="header" color="light">
-                <ion-label>{{"Lancha"| translate }}</ion-label>
-              </ion-item>
-              <div class="ion-padding" slot="content">
-                {{"RentaLanchas"| translate }} <br />
-                {{"PaseoLanchas"| translate }}
-                <br />
-                {{"PrecioLanchas"| translate }}
-              </div>
-            </ion-accordion>
-            <ion-accordion value="second">
-              <ion-item slot="header" color="light">
-                <ion-label>{{"Masages"| translate }}</ion-label>
-              </ion-item>
-              <div class="ion-padding" slot="content">
-                {{"Masaje1"| translate }}
-                <br />
-                {{"Mensaje2"| translate }}
-                <br />
-                {{"Mensaje3"| translate }}
-              </div>
-            </ion-accordion>
-            <ion-accordion value="third">
-              <ion-item slot="header" color="light">
-                <ion-label>{{"Ciclismo"| translate }}</ion-label>
-              </ion-item>
-              <div class="ion-padding" slot="content">
-                {{"Ciclismo1"| translate }}
-              </div>
-            </ion-accordion>
-            <ion-accordion value="four">
-              <ion-item slot="header" color="light">
-                <ion-label>{{"Kayak"| translate }}</ion-label>
-              </ion-item>
-              <div class="ion-padding" slot="content">
-                {{"KayakTexto"| translate }} <br>
-                {{"KayakTexto1"| translate }} <br>
-                {{"KayakTexto2"| translate }} <br>
-                {{"KayakTexto3"| translate }} <br>
-                {{"KayakTexto4"| translate }} <br>
-              </div>
-            </ion-accordion>
-            <ion-accordion value="five">
-              <ion-item slot="header" color="light">
-                <ion-label>{{"Natacion"| translate }}</ion-label>
-              </ion-item>
-              <div class="ion-padding" slot="content">
-                {{"NatacionTexto"| translate }}
-              </div>
-            </ion-accordion>
-          </ion-accordion-group>
     </ion-card-header>
   </ion-card>
+  <ion-accordion-group expand="inset">
+    <ion-accordion value="first">
+      <ion-item slot="header" color="light">
+        <ion-label>{{"Lancha"| translate }}</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <swiper [slidesPerView]="1" [loop]="true">
+          <ng-template swiperSlide>
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  {{"RentaLanchas"| translate }}
+                  <a href="tel:+523112661762" style="text-decoration: none"
+                    >3112661762</a
+                  ></ion-card-title
+                >
+              </ion-card-header>
+              <ion-img
+                src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/306105025_125497666905692_4872900357867694459_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHr3DpBIaNpnjdTX6j6xOO009zVWMP7HpbT3NVYw_selsNg3dD4ygYNc6WSFVoGS-1OqFvE5H-iNA1-L25pRUXC&_nc_ohc=Gb8z_Vui_eQAX8EpkA8&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfCMlEem7yzdeh-XyXYLNjL2DP2xkgszAlmL_Cix691r8Q&oe=63A1B5A6"
+                width="150"
+                height="150"
+              ></ion-img>
+            </ion-card>
+          </ng-template>
+          <ng-template swiperSlide
+            ><ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  {{"PaseoLanchas"| translate }}
+                  <a href="tel:+523112661762" style="text-decoration: none"
+                    >3112661762</a
+                  >
+                </ion-card-title>
+              </ion-card-header>
+              <ion-img
+                src="https://gentenayarit.com/wp-content/uploads/2017/08/Captura-de-pantalla-2017-08-04-a-las-0.10.34.png"
+                width="150"
+                height="150"
+              ></ion-img> </ion-card
+          ></ng-template>
+        </swiper>
+        <label>{{"PrecioLanchas" | translate}}</label>
+      </div>
+    </ion-accordion>
+
+    <ion-accordion value="second">
+      <ion-item slot="header" color="light">
+        <ion-label>{{"Masages"| translate }}</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <swiper [slidesPerView]="1" [loop]="true">
+          <ng-template swiperSlide>
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title
+                  >{{"Masaje1"| translate }}
+                  <a href="tel:+523111232609" style="text-decoration: none">
+                    3111232609</a
+                  ></ion-card-title
+                >
+              </ion-card-header>
+              <ion-img
+                src="https://www.ess21.mx/wp-content/uploads/2021/05/masaje.png"
+                width="150"
+                height="150"
+              ></ion-img>
+            </ion-card>
+          </ng-template>
+          <ng-template swiperSlide
+            ><ion-card>
+              <ion-card-header>
+                <ion-card-title
+                  >{{"Masaje2"| translate }}
+                  <a href="tel:+523111232609" style="text-decoration: none">
+                    3111232609</a
+                  ></ion-card-title
+                >
+              </ion-card-header>
+              <ion-img
+                src="https://www.elsoldetoluca.com.mx/incoming/9x1gfj-temazcal-img-20210430-wa0011.jpg/ALTERNATES/LANDSCAPE_1140/Temazcal%20IMG-20210430-WA0011.jpg"
+                width="150"
+                height="150"
+              ></ion-img> </ion-card
+          ></ng-template>
+        </swiper>
+        <label>{{"Mensaje3"| translate }}</label>
+      </div>
+    </ion-accordion>
+    <ion-accordion value="third">
+      <ion-item slot="header" color="light">
+        <ion-label>{{"Ciclismo"| translate }}</ion-label>
+        <div class="ion-padding" slot="content">
+          <swiper [slidesPerView]="1" [loop]="true">
+            <ng-template swiperSlide>
+              <ion-card>
+                <ion-img
+                  src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/295597267_137491805633697_4528950829476563055_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHE8Un-12t1izhNBzvNfvDhX_GZfqbDixhf8Zl-psOLGM14VgrHohOND76LJy5VhKgY6r2i3JJquBZa4csq9hk9&_nc_ohc=KdMhpvjKdz0AX_GeWAr&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfBNqXJRWb97GTS4ozPXpLBbHEpNEjrkd_dOtDdYAtMFWA&oe=63A0180C"
+                  width="150"
+                  height="150"
+                ></ion-img>
+              </ion-card>
+            </ng-template>
+            <ng-template swiperSlide
+              ><ion-card>
+                <ion-img
+                  src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t31.18172-8/27625052_753388008198449_6193827554865790503_o.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGK10uQLLrjXWgTgZgKO7ATqdH4I3acWnqp0fgjdpxaevdd65-oPI61ECsexIZ-zlXhmzqIUYiioJHTNV7jELrh&_nc_ohc=tgb_XDrw804AX_j6Ixr&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfAF6PW5ucT9syvd3eduavArLAH50V0rhyoYMGE9hV2BTQ&oe=63C36609"
+                  width="150"
+                  height="150"
+                ></ion-img> </ion-card
+            ></ng-template>
+          </swiper>
+        </div>
+      </ion-item>
+      <div class="ion-padding" slot="content">{{"Ciclismo1"| translate }}</div>
+    </ion-accordion>
+
+    <ion-accordion value="four">
+      <ion-item slot="header" color="light">
+        <ion-label>{{"Kayak"| translate }}</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-img
+          src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/305987630_125497706905688_657665189673724151_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHYQc7cUA6DMDCQC_7HteMhT9wcCPlVEglP3BwI-VUSCbAe-nHT3YlveRjxw64gkHRNNtOww-ohvYkg4Hum8unu&_nc_ohc=OUo3PRQQR1kAX9-5xrH&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfBHJKlADiMEihysNMeP4JUwkSP5y8wNGDoO81zL_9W0Wg&oe=63A1B0CF"
+        ></ion-img>
+        {{"KayakTexto"| translate }} <br />
+        {{"KayakTexto1"| translate }} <br />
+        {{"KayakTexto2"| translate }} <br />
+        {{"KayakTexto3"| translate }} <br />
+        {{"KayakTexto4"| translate }} <br />
+      </div>
+    </ion-accordion>
+    <ion-accordion value="five">
+      <ion-item slot="header" color="light">
+        <ion-label>{{"Natacion"| translate }}</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-img
+          src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t39.30808-6/291171172_130022519713959_248049478540679560_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeHNUfpdDMAGx6h2_K_Sc7QRjjSIdR8g24eONIh1HyDbh12CBimu--oenSA1xNMLbx8XsfgtdhF2Qt5HTjf8KinW&_nc_ohc=5NDk78AFbn8AX86zggV&_nc_ht=scontent.ftpq1-1.fna&oh=00_AfCBvOehsenne1wbO3EFe7KNRQZ3UdQKGF0SjAQ1-9cbRA&oe=63A13598"
+        ></ion-img>
+        {{"NatacionTexto"| translate }}
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
 </ion-content>
