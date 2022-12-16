@@ -4,6 +4,7 @@ import SwiperCore, { Autoplay, Keyboard, Pagination, Scrollbar, Zoom } from 'swi
 import { IonicSlides } from '@ionic/angular';
 SwiperCore.use([Autoplay, Keyboard, Pagination, Scrollbar, Zoom, IonicSlides]);
 import { Reservacion } from '../models/reservacion';
+import { ReservacionService } from '../services/reservacion.service';
 
 
 
@@ -26,7 +27,9 @@ export class Tab4Page implements OnInit {
       habitacion: "1A",
       tokens: "111"
     }
-  constructor() { }
+  constructor(private service: ReservacionService) { 
+    this.huesped = service.huesped;
+  }
 
   ngOnInit() {
     
